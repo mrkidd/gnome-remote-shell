@@ -1,0 +1,103 @@
+# Note that this is NOT a relocatable package
+%define gettext_package gnome-remote-shell
+%define glib2_version 2.4.0
+%define pango_version 1.4.0
+%define gtk2_version 2.4.0
+%define libgnomeui_version 2.2.0
+%define desktop_file_utils_version 0.2.90
+
+%define localstatedir /var/lib
+
+%define ver     @VERSION@
+%define RELEASE 1
+%define rel     %{?CUSTOM_RELEASE} %{!?CUSTOM_RELEASE:%RELEASE}
+%define prefix  /usr
+
+Summary: GNOME Remote Shell
+Name: gnome-remote-shell
+Version: %ver
+Release: %rel
+Epoch: 1
+Copyright: GPL
+Group: Applications/Internet
+Source: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.gz
+BuildRoot: %{_tmppath}/%{name}-%{version}-root
+URL: http://www.gnome.org
+
+Prereq:         scrollkeeper >= 0.1.4
+Prereq:         GConf2
+Prereq:         /usr/bin/gconftool-2
+                                                                                
+BuildRequires:  glib2-devel >= %{glib2_version}
+BuildRequires:  pango-devel >= %{pango_version}
+BuildRequires:  gtk2-devel >= %{gtk2_version}
+BuildRequires:  libgnomeui-devel >= %{libgnomeui_version}
+
+%description
+Gnome Remote Shell is a interface for launching telnet and ssh sessions.
+
+%prep
+%setup -q
+
+%build
+%configure --localstatedir=%{localstatedir} --disable-schemas-install
+if [ "$SMP" != "" ]; then
+  (make "MAKE=make -k -j $SMP"; exit 0)
+  make
+else
+  make
+fi
+
+%install
+rm -rf $RPM_BUILD_ROOT
+
+%makeinstall localstatedir=$RPM_BUILD_ROOT%{localstatedir}
+
+## things we just don't want in the package
+rm -rf $RPM_BUILD_ROOT%{localstatedir}/scrollkeeper
+
+# install desktop files
+#  need a fix for bug 114322 for this to work
+#desktop-file-install --vendor gnome --delete-original       \
+#  --dir $RPM_BUILD_ROOT%{_datadir}/applications             \
+#  --add-category X-Red-Hat-Base                             \
+#  $RPM_BUILD_ROOT%{_datadir}/applications/*
+# In the meantime the following works
+#perl -pi -e 's@^(Categories=.*)$@$1;X-Red-Hat-Base@g' $RPM_BUILD_ROOT%{_datadir}/applications/*
+                                                                                
+%find_lang %{gettext_package}
+
+%post
+scrollkeeper-update
+                                                                                
+export GCONF_CONFIG_SOURCE=`gconftool-2 --get-default-source`
+SCHEMAS=""
+for S in $SCHEMAS; do
+  gconftool-2 --makefile-install-rule %{_sysconfdir}/gconf/schemas/$S > /dev/null
+done
+                                                                                
+%postun
+scrollkeeper-update
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files -f %{gettext_package}.lang
+%defattr(-, root, root)
+
+%doc AUTHORS COPYING ChangeLog NEWS README
+%{_bindir}/*
+%{_datadir}/locale/*/*
+%{_datadir}/locale/*/*
+%{_datadir}/applications/*
+%{_datadir}/gnome-remote-shell/dialogs/*
+%{_datadir}/pixmaps/*
+
+%changelog
+
+* Thu Jul 31 2003 William Jon McCann <mccann@jhu.edu>
+- Updated for GNOME 2.
+
+* Mon Mar 16 1998 Marc Ewing <marc@redhat.com>
+- Integrate into gnome-network CVS source tree
+

@@ -1,0 +1,1448 @@
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Valek Filippov <val@comptek.ru>, 1999.
+# Egor S. Orlov <Egor.Orlov@avalon.ru>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-network\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-02-17 08:25+0300\n"
+"PO-Revision-Date: 2004-02-17 08:32+0300\n"
+"Last-Translator: Dmitry G. Mastrukov <dmitry@taurussoft.org>\n"
+"Language-Team: Russian <gnome-cyr@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: desktop/client/applet/applet.c:67 desktop/client/applet/applet.c:128
+msgid "GNOME Remote Desktop Applet"
+msgstr "Апплет удалённого рабочего стола среды Гном"
+
+#: desktop/client/gnome-remote-desktop.desktop.in.h:1
+msgid "Connect to a remote desktop computer"
+msgstr "Апплет подсоединения к рабочему столу удалённого компьютера."
+
+#: desktop/client/gnome-remote-desktop.desktop.in.h:2
+msgid "Remote Desktop Client"
+msgstr "Клиент удалённого рабочего стола"
+
+#: desktop/client/src/connect.c:75
+msgid "640 x 480 pixels"
+msgstr "640 x 480 точек"
+
+#: desktop/client/src/connect.c:75
+msgid "800 x 600 pixels"
+msgstr "800 x 600 точек"
+
+#: desktop/client/src/connect.c:76
+msgid "1024 x 768 pixels"
+msgstr "1024 x 768 точек"
+
+#: desktop/client/src/connect.c:77
+msgid "1152 x 864 pixels"
+msgstr "1152 x 864 точек"
+
+#: desktop/client/src/connect.c:78
+msgid "1280 x 960 pixels"
+msgstr "1280 x 960 точек"
+
+#: desktop/client/src/connect.c:82
+msgid "256 Colors"
+msgstr "256 цветов"
+
+#: desktop/client/src/connect.c:83
+msgid "High Color (15 bit)"
+msgstr "High Color (15 бит)"
+
+#: desktop/client/src/connect.c:84
+msgid "High Color (16 bit)"
+msgstr "High Color (16 бит)"
+
+#: desktop/client/src/connect.c:85
+msgid "True Color (24 bit)"
+msgstr "True Color (24 бит)"
+
+#: desktop/client/src/connect.c:286 desktop/client/src/connect.c:309
+#: desktop/client/src/connect.c:311 desktop/client/src/support.c:780
+msgid "GNOME Remote Desktop"
+msgstr "Удалённый рабочий стол среды Гном"
+
+#.
+#. This is the input for the Compact mode
+#.
+#: desktop/client/src/connect.c:343 desktop/client/src/connect.c:554
+msgid "Compu_ter:"
+msgstr "Компью_тер"
+
+#: desktop/client/src/connect.c:367 desktop/client/src/connect.c:622
+msgid "Enter the name or address of the remote system."
+msgstr "Введите имя или адрес удаленной системы."
+
+#: desktop/client/src/connect.c:372 desktop/client/src/connect.c:629
+msgid "Select the protocol to use for this connection."
+msgstr "Выберите протокол для этого соединения."
+
+#: desktop/client/src/connect.c:379 desktop/client/src/connect.c:636
+msgid ""
+"RDP protocol is used to connect to Microsoft Terminal Servers and Windows XP "
+"systems with desktop sharing."
+msgstr ""
+"Протокол RDP используется для подключения к терминальным серверам Microsoft "
+"и системам Windows XP с разделением экрана."
+
+#: desktop/client/src/connect.c:384 desktop/client/src/connect.c:643
+msgid ""
+"VNC protocol is used to connect to systems sharing the desktop by using VNC."
+msgstr "Протокол VNC используется для подключения к серверам VNC."
+
+#: desktop/client/src/connect.c:393 desktop/client/src/connect.c:654
+msgid "XDMCP protocol uses Xnest to connect to servers running X."
+msgstr "Протокол XDMCP использует Xnest для подсоединения к X-серверам."
+
+#: desktop/client/src/connect.c:398 desktop/client/src/connect.c:661
+msgid "ICA protocol is used to connect to Citrix servers."
+msgstr "Протокол ICA используется для подключения к серверам Citrix."
+
+#.
+#. This is the Profile Launcher
+#.
+#: desktop/client/src/connect.c:409
+msgid "Prof_ile Launcher:"
+msgstr "Запуск профиля:"
+
+#: desktop/client/src/connect.c:422
+msgid "Select a saved profile to launch it immediately."
+msgstr "Выберите сохраненный профиль для его запуска."
+
+#: desktop/client/src/connect.c:454
+msgid "_More"
+msgstr "_Далее"
+
+#: desktop/client/src/connect.c:480 desktop/client/src/connect.c:1224
+#: network-utilities/gnome-remote-shell.glade.h:6
+msgid "Co_nnect"
+msgstr "Соединиться"
+
+#.
+#. This is the label for the Connection Profile
+#.
+#: desktop/client/src/connect.c:489 desktop/client/src/connect.c:491
+msgid "Connection Profile"
+msgstr "Профиль соединения"
+
+#: desktop/client/src/connect.c:520 desktop/client/src/connect.c:522
+msgid "Logon Settings"
+msgstr "Установки входа"
+
+#: desktop/client/src/connect.c:530
+msgid ""
+"Type the name of the computer or choose a computer from the drop-down list."
+msgstr "Введите имя компьютера или выберете компьютер из выпадающего списка."
+
+#: desktop/client/src/connect.c:562
+msgid "Pro_tocol:"
+msgstr "Протокол:"
+
+#: desktop/client/src/connect.c:570
+msgid "_User Name:"
+msgstr "Имя пользователя:"
+
+#: desktop/client/src/connect.c:578
+msgid "Pass_word:"
+msgstr "Пароль:"
+
+#: desktop/client/src/connect.c:586
+msgid "Do_main:"
+msgstr "Домен:"
+
+#: desktop/client/src/connect.c:594
+msgid "C_lient Hostname:"
+msgstr "Клиентское имя узла::"
+
+#: desktop/client/src/connect.c:602
+msgid "Prot_ocol File:"
+msgstr "Файл протокола:"
+
+#: desktop/client/src/connect.c:677
+msgid ""
+"Enter the username for the remote system.\n"
+"For VNC, enter the path to your saved vnc password file."
+msgstr ""
+"Введите имя удаленной системы.\n"
+"Для VNC укажите путь к вашему сохраненному файлу паролей VNC."
+
+#: desktop/client/src/connect.c:686
+msgid "Enter the password for the remote system."
+msgstr "Введите пароль для удаленной системы."
+
+#: desktop/client/src/connect.c:694
+msgid "Enter the domain for the remote system."
+msgstr "Введите домен для удаленной системы."
+
+#: desktop/client/src/connect.c:702
+msgid "Enter the local hostname for this system."
+msgstr "Введите имя узла локальной системы."
+
+#: desktop/client/src/connect.c:714
+msgid ""
+"Some protocols require a file containing settings. If required, enter the "
+"path to the file here."
+msgstr ""
+"Некоторым протоколам требуется файл установок, укажите путь к файлу, если "
+"это необходимо."
+
+#: desktop/client/src/connect.c:736 desktop/client/src/connect.c:738
+msgid "Remote Desktop Size"
+msgstr "Размер удаленного экрана"
+
+#: desktop/client/src/connect.c:756
+msgid "Use default screen size"
+msgstr "Использовать размер по умолчанию"
+
+#: desktop/client/src/connect.c:760
+msgid "Use the default screen size."
+msgstr "Использовать размер по умолчанию."
+
+#: desktop/client/src/connect.c:765
+msgid "Use specified screen size"
+msgstr "Использовать указанный размер экрана"
+
+#: desktop/client/src/connect.c:769
+msgid "Use the list to choose the screen size to use."
+msgstr "Выберете в списке используемый размер экрана."
+
+#: desktop/client/src/connect.c:781
+msgid "Operate in full screen mode"
+msgstr "Работать в полноэкранном режиме"
+
+#: desktop/client/src/connect.c:785
+msgid "Work in full screen mode."
+msgstr "Работать в полноэкранном режиме."
+
+#: desktop/client/src/connect.c:794
+msgid "Use alternate full screen switch (-F)"
+msgstr "Использовать ключ(-F) для полноэкранного режима"
+
+#: desktop/client/src/connect.c:798
+msgid "Check this if you use rdesktop with the unified patches."
+msgstr "Проверьте это если вы используете rdesktop с унифицированными патчами."
+
+#: desktop/client/src/connect.c:807 desktop/client/src/connect.c:809
+msgid "Colors"
+msgstr "Цвета"
+
+#: desktop/client/src/connect.c:827
+msgid "Use default color depth"
+msgstr "Использовать глубину цвета по-умолчанию"
+
+#: desktop/client/src/connect.c:831
+msgid "Use the default color depth."
+msgstr "Использовать глубину цвета по-умолчанию."
+
+#: desktop/client/src/connect.c:836
+msgid "Use specified color depth"
+msgstr "Использовать указанную глубину цвета"
+
+#: desktop/client/src/connect.c:840
+msgid "Use the list to choose the color depth to use."
+msgstr "Использовать указанную глубину цвета."
+
+#: desktop/client/src/connect.c:864
+msgid "Remote Computer _Sound"
+msgstr "Звук на удаленном компьютере"
+
+#: desktop/client/src/connect.c:866
+msgid "Remote Computer Sound"
+msgstr "Звук на удаленном компьютере"
+
+#: desktop/client/src/connect.c:890 desktop/client/src/connect.c:926
+msgid "On the local computer"
+msgstr "На локальном компьютере"
+
+#: desktop/client/src/connect.c:893 desktop/client/src/connect.c:929
+msgid "On the remote computer"
+msgstr "На удаленном компьютере"
+
+#: desktop/client/src/connect.c:896
+msgid "Do not play"
+msgstr "Не играть"
+
+#: desktop/client/src/connect.c:907
+msgid "_Keyboard"
+msgstr "_Клавиатура"
+
+#: desktop/client/src/connect.c:909
+msgid "Keyboard"
+msgstr "Клавиатура"
+
+#: desktop/client/src/connect.c:932
+msgid "In full screen mode only"
+msgstr "Только в полноэкранном режиме"
+
+#: desktop/client/src/connect.c:938
+msgid ""
+"Use the following keyboard language\n"
+"(2 char keycode)"
+msgstr ""
+"Использовать следующую раскладку клавиатуры\n"
+"(2-символьный код)"
+
+#: desktop/client/src/connect.c:966
+msgid ""
+"Apply Windows key combinations\n"
+"(for example ALT+TAB) (unsupported)"
+msgstr ""
+"Применить комбинации клавиш Windows\n"
+"(на пример ALT+TAB) (не поддерживается)"
+
+#: desktop/client/src/connect.c:989 desktop/client/src/connect.c:991
+msgid "Start a Program"
+msgstr "Запустить программу"
+
+#: desktop/client/src/connect.c:1006
+msgid "Start the following program on connection"
+msgstr "Запустить следующую программу при соединении"
+
+#: desktop/client/src/connect.c:1013
+msgid "Program path and filename"
+msgstr "Путь и имя программы"
+
+#: desktop/client/src/connect.c:1026
+msgid "Start in the following folder"
+msgstr "Запустить в папке"
+
+#: desktop/client/src/connect.c:1048 desktop/client/src/connect.c:1050
+msgid "Optimize Performance"
+msgstr "Оптимизация производительности"
+
+#: desktop/client/src/connect.c:1071
+msgid "Desktop background (u)"
+msgstr "Обои рабочего стола (u)"
+
+#: desktop/client/src/connect.c:1075
+msgid "Show content of window while dragging (u)"
+msgstr "Показывать содержимое окна при перетаскивании (u)"
+
+#: desktop/client/src/connect.c:1079
+msgid "Menu and window animation (u)"
+msgstr "Анимация окон и меню (u)"
+
+#: desktop/client/src/connect.c:1083
+msgid "Themes (u)"
+msgstr "Темы (u)"
+
+#: desktop/client/src/connect.c:1087
+msgid "Enable bitmap caching"
+msgstr "Включить кэширование битмапов"
+
+#: desktop/client/src/connect.c:1091
+msgid "Do not send motion events"
+msgstr "Не посылать событий о перемещении"
+
+#: desktop/client/src/connect.c:1095
+msgid "Enable window manager's key bindings"
+msgstr "Включить привязки классов оконного менеджера"
+
+#: desktop/client/src/connect.c:1100
+msgid "Options available for optimizing performance"
+msgstr "Доступные опции для оптимизации производительности"
+
+#.
+#. These are the labels for the notebook control
+#.
+#: desktop/client/src/connect.c:1113
+msgid "_General"
+msgstr "_Общее"
+
+#: desktop/client/src/connect.c:1118
+msgid "_Display"
+msgstr "_Экран"
+
+#: desktop/client/src/connect.c:1123
+msgid "Local _Resources"
+msgstr "Локальные _Ресурсы"
+
+#: desktop/client/src/connect.c:1128
+msgid "_Programs"
+msgstr "_Программы"
+
+#: desktop/client/src/connect.c:1133
+msgid "Perf_ormance"
+msgstr "Производительность"
+
+#: desktop/client/src/connect.c:1197
+msgid "_Less"
+msgstr "_Менее"
+
+#: desktop/client/src/connect.c:1708
+msgid "Input a filename to save as..."
+msgstr "Введите имя файла для сохрания.."
+
+#: desktop/client/src/connect.c:1750 desktop/client/src/connect.c:1795
+msgid "Choose an RDP file to open..."
+msgstr "Выберите RDP-файл для открытия..."
+
+#: desktop/client/src/support.c:277
+msgid ""
+"rdesktop was not found in your path.\n"
+"Please verify your rdesktop installation."
+msgstr ""
+"rdesktop не был найден по указанному пути.\n"
+"Пожалуйста проверьте инсталляцию rdesktop."
+
+#: desktop/client/src/support.c:417
+msgid ""
+"vncviewer or xvncviewer were\n"
+" not found in your path.\n"
+"Please verify your vnc installation."
+msgstr ""
+"vncviewer или xvncviewer не были\n"
+"найдены по указанному пути.\n"
+"Пожалуйста, проверьте инсталляцию VNC."
+
+#: desktop/client/src/support.c:519
+msgid ""
+"Xnest was not found in your path.\n"
+"Please verify your Xnest installation."
+msgstr ""
+"Xnest не был найден по указанному пути.\n"
+"Пожалуйста, проверьте инсталляцию Xnest."
+
+#: desktop/client/src/support.c:578
+msgid ""
+"wfica was not found in your path.\n"
+"Please verify your ICAClient installation."
+msgstr ""
+"wfica не был найден по указанному пути.\n"
+"Пожалуйста, проверьте инсталляцию ICA client."
+
+#: desktop/client/src/support.c:702
+msgid ""
+"Failed to spawn.\n"
+"Please verify your installation."
+msgstr ""
+"Невозможно запустить.\n"
+"Проверьте вашу инсталляцию."
+
+#. create the widgets
+#: desktop/client/src/support.c:744
+msgid "GNOME Remote Desktop Error"
+msgstr "Ошибка удалённого рабочего стола среды Гном"
+
+#: desktop/client/src/support.c:750 desktop/client/src/support.c:756
+msgid "An error has occurred."
+msgstr "Произошла ошибка."
+
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:1
+msgid "Check this to enable desktop sharing in GNOME"
+msgstr ""
+
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:2
+msgid "Password to connect to desktop sharing"
+msgstr ""
+
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:3
+msgid ""
+"Set this to the password clients should use to connect to your desktop "
+"remotely"
+msgstr ""
+
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:4
+msgid "Whether to enable desktop sharing"
+msgstr ""
+
+#: desktop/preferences/interface.c:49 desktop/preferences/interface.c:64
+#: desktop/server/tray.c:167
+msgid "Desktop Sharing"
+msgstr ""
+
+#: desktop/preferences/interface.c:73
+msgid "_Share my desktop with others"
+msgstr ""
+
+#: desktop/preferences/interface.c:79
+msgid "Enable this option to allow others to view your desktop"
+msgstr ""
+
+#: desktop/preferences/interface.c:94
+msgid ""
+"The following information will need to be supplied by the user connecting to "
+"your desktop"
+msgstr ""
+
+#: desktop/preferences/interface.c:105
+msgid "Password"
+msgstr "Пароль"
+
+#: desktop/preferences/interface.c:123
+msgid "Automatically accept clients"
+msgstr ""
+
+#: desktop/preferences/support.c:60 desktop/preferences/support.c:85
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr ""
+
+#: desktop/server/eggtrayicon.c:118
+#, fuzzy
+msgid "Orientation"
+msgstr "Аутентификация"
+
+#: desktop/server/eggtrayicon.c:119
+msgid "The orientation of the tray."
+msgstr ""
+
+#: desktop/server/tray.c:66 pws/pws.c:85
+msgid "/_Preferences"
+msgstr ""
+
+#: desktop/server/tray.c:67
+msgid "/_Clients"
+msgstr ""
+
+#: desktop/server/tray.c:69
+#, fuzzy
+msgid "/_About"
+msgstr "О программе"
+
+#: desktop/server/tray.c:70 pws/pws.c:88
+#, fuzzy
+msgid "/_Quit"
+msgstr "Правка..."
+
+#: desktop/server/tray.c:122
+msgid "Your desktop is viewable to others"
+msgstr ""
+
+#: desktop/server/tray.c:169
+#, fuzzy
+msgid "Remote Desktop Sharing"
+msgstr "Удаленный"
+
+#: desktop/server/tray.c:172 gnome-netinfo/callbacks.c:214
+msgid "This is an untranslated version of GNOME Network Information"
+msgstr ""
+
+#: desktop/server/tray.c:407
+msgid "Clients currently viewing your desktop"
+msgstr ""
+
+#: desktop/server/tray.c:429
+msgid "Disconnect"
+msgstr "Отсоединиться"
+
+#: desktop/server/x11vnc.c:346
+#, c-format
+msgid "Host %s is no longer viewing your desktop"
+msgstr ""
+
+#: desktop/server/x11vnc.c:419
+#, c-format
+msgid "Host %s is trying to view your desktop, allow them?"
+msgstr ""
+
+#: desktop/server/x11vnc.c:445
+#, c-format
+msgid "Host %s is now viewing your desktop"
+msgstr ""
+
+#: gnome-netinfo/callbacks.c:212
+msgid "Graphical user interface for common network utilities"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:1
+#: network-utilities/gnome-remote-shell.glade.h:1
+msgid "    "
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:2
+msgid "(eg. user@www.domain.com)"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:3
+msgid "(for example: domain.com)"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:4
+msgid "(for example: www.domain.com or 192.168.2.1)"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:5
+#: network-utilities/gnome-remote-shell.glade.h:2
+msgid "*"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:6
+msgid "0.0"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:7
+msgid "<span weight=\"bold\">@</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:8
+msgid ""
+"<span weight=\"bold\">Enter a domain address to lookup its \"whois\" "
+"information</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:9
+msgid "<span weight=\"bold\">Enter a network address to lookup</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:10
+msgid ""
+"<span weight=\"bold\">Enter a user name and network address to finger that "
+"user</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:11
+msgid "<span weight=\"bold\">Enter the network address to ping</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:12
+msgid ""
+"<span weight=\"bold\">Enter the network address to scan for open ports</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:13
+msgid ""
+"<span weight=\"bold\">Enter the network address to trace a route to</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:14
+msgid "<span weight=\"bold\">Information</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:15
+msgid "<span weight=\"bold\">Round trip time statistics</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:16
+msgid ""
+"<span weight=\"bold\">Select the network device to get information on</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:17
+msgid "<span weight=\"bold\">Select the type of information to display</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:18
+msgid "<span weight=\"bold\">Select the type of information to lookup:</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:19
+msgid "<span weight=\"bold\">Statistics</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:20
+msgid "<span weight=\"bold\">Transmission statistics</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:21
+msgid "Any / All Information"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:22
+msgid "Average:"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:23
+msgid "Broadcast:"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:24
+msgid "CPU / OS Type"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:25
+msgid "Canonical Name"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:26
+msgid "Clear _History"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:27
+msgid "Collisions:"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:28
+msgid "Default Information"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:29
+msgid "Display active network services"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:30
+msgid "Display multicast information"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:31
+msgid "Display routing table information"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:32
+msgid "Enter the network address to ping"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:33 gnome-netinfo/main.c:530
+msgid "Finger"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:34
+#, fuzzy
+msgid "Hardware address:"
+msgstr "IP-адрес"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:35
+#, fuzzy
+msgid "Host name for Address"
+msgstr "Удаленный IP-адрес [FixMe]"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:36
+#, fuzzy
+msgid "IP address:"
+msgstr "IP-адрес"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:37
+#, fuzzy
+msgid "Internet Address"
+msgstr "IP-адрес"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:38
+msgid "Link speed:"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:39 gnome-netinfo/main.c:485
+msgid "Lookup"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:40
+msgid "MTU:"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:41
+msgid "Mailbox Exchange"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:42
+msgid "Mailbox Information"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:43
+#, fuzzy
+msgid "Maximum:"
+msgstr "Максимальное число попыток дозвона"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:44
+msgid "Minimum:"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:45
+msgid "Multicast:"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:46
+#, fuzzy
+msgid "Name Server"
+msgstr "Сервера DNS"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:47
+#, fuzzy
+msgid "Netmask:"
+msgstr "Маска подсети"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:48 gnome-netinfo/main.c:349
+msgid "Netstat"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:49 gnome-netinfo/main.c:110
+msgid "Network Information"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:50
+msgid "Packets loss:"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:51
+msgid "Packets received:"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:52
+msgid "Packets transmitted:"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:53 gnome-netinfo/main.c:257
+msgid "Ping"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:54
+msgid "Port _Scan"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:55
+#, fuzzy
+msgid "Received bytes:"
+msgstr "Принять"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:56
+#, fuzzy
+msgid "Received packets:"
+msgstr "Принять"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:57
+msgid "Reception errors:"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:58 gnome-netinfo/main.c:447
+msgid "Scan"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:59
+msgid "Select network device from list"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:60
+#, fuzzy
+msgid "Send only"
+msgstr "Послать"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:61
+msgid "Send unlimited requests (pings)"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:62
+msgid "Start-of-authority"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:63
+#, fuzzy
+msgid "State:"
+msgstr "Статус"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:64
+msgid "Text Information"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:65 gnome-netinfo/main.c:305
+msgid "Trace"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:66
+#, fuzzy
+msgid "Transmission errors:"
+msgstr "Максимальный передаваемый блок (MTU)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:67
+msgid "Transmitted bytes:"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:68
+#, fuzzy
+msgid "Transmitted packets:"
+msgstr "Принять"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:69
+msgid "Well Known Services"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:70 gnome-netinfo/main.c:581
+msgid "Whois"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:71
+#, fuzzy
+msgid "_Devices"
+msgstr "Модем"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:72
+msgid "_Finger"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:73
+msgid "_Information"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:74
+msgid "_Lookup"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:75
+msgid "_Netstat"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:76
+msgid "_Ping"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:77
+msgid "_Traceroute"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:78
+msgid "_Whois"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:79
+msgid "ms"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:80
+msgid "not available"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:81
+msgid "requests (pings)"
+msgstr ""
+
+#: gnome-netinfo/info.c:277
+#, fuzzy
+msgid "Active"
+msgstr "Действие"
+
+#: gnome-netinfo/info.c:279
+msgid "Inactive"
+msgstr ""
+
+#: gnome-netinfo/info.c:284
+msgid "Loopback"
+msgstr ""
+
+#: gnome-netinfo/info.c:297
+msgid "Enabled"
+msgstr ""
+
+#: gnome-netinfo/info.c:299
+#, fuzzy
+msgid "Disabled"
+msgstr "Дозвон"
+
+#. The info output in a text format (to copy on clipboard)
+#: gnome-netinfo/info.c:419
+#, c-format
+msgid "Network device:\t%s\n"
+msgstr ""
+
+#: gnome-netinfo/info.c:420
+#, fuzzy, c-format
+msgid "Hardware address:\t%s\n"
+msgstr "IP-адрес"
+
+#: gnome-netinfo/info.c:421
+#, fuzzy, c-format
+msgid "IP address:\t%s\n"
+msgstr "IP-адрес"
+
+#: gnome-netinfo/info.c:422
+#, fuzzy, c-format
+msgid "Netmask:\t%s\n"
+msgstr "Маска подсети"
+
+#: gnome-netinfo/info.c:423
+#, c-format
+msgid "Broadcast:\t%s\n"
+msgstr ""
+
+#: gnome-netinfo/info.c:424
+#, c-format
+msgid "Multicast:\t%s\n"
+msgstr ""
+
+#: gnome-netinfo/info.c:425
+#, c-format
+msgid "MTU:\t%s\n"
+msgstr ""
+
+#: gnome-netinfo/info.c:426
+#, c-format
+msgid "Link speed:\t%s\n"
+msgstr ""
+
+#: gnome-netinfo/info.c:427
+#, fuzzy, c-format
+msgid "State:\t%s\n"
+msgstr "Статус"
+
+#: gnome-netinfo/info.c:429
+#, c-format
+msgid "Transmitted packets:\t%s\n"
+msgstr ""
+
+#: gnome-netinfo/info.c:430
+#, fuzzy, c-format
+msgid "Transmission errors:\t%s\n"
+msgstr "Максимальный передаваемый блок (MTU)"
+
+#: gnome-netinfo/info.c:431
+#, fuzzy, c-format
+msgid "Received packets:\t%s\n"
+msgstr "Принять"
+
+#: gnome-netinfo/info.c:432
+#, c-format
+msgid "Reception errors:\t%s\n"
+msgstr ""
+
+#: gnome-netinfo/info.c:433
+#, c-format
+msgid "Collisions:\t%s\n"
+msgstr ""
+
+#: gnome-netinfo/lookup.c:272
+#, fuzzy
+msgid "Name"
+msgstr "Имя пользователя"
+
+#: gnome-netinfo/lookup.c:280
+msgid "TTL"
+msgstr ""
+
+#: gnome-netinfo/lookup.c:289
+#, fuzzy
+msgid "Address Type"
+msgstr "IP-адрес"
+
+#: gnome-netinfo/lookup.c:299
+msgid "Record Type"
+msgstr ""
+
+#: gnome-netinfo/lookup.c:308
+#, fuzzy
+msgid "Address"
+msgstr "IP-адрес"
+
+#. The lookup output in text format:
+#. Source of query (hostname/ip address),
+#. Time To Live (TTL), Address Type,
+#. Record Type (A, PTR, HINFO, NS, TXT, etc.),
+#. Resolution (results of the query)
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/lookup.c:336
+msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
+msgstr ""
+
+#: gnome-netinfo/main.c:75
+msgid "Load information for a network device"
+msgstr ""
+
+#: gnome-netinfo/main.c:76
+msgid "DEVICE"
+msgstr ""
+
+#: gnome-netinfo/main.c:78
+#, fuzzy
+msgid "Send a ping to a network address"
+msgstr "ответ использует не правильный сетевой адрес"
+
+#: gnome-netinfo/main.c:79 gnome-netinfo/main.c:85 gnome-netinfo/main.c:88
+#: gnome-netinfo/main.c:91
+msgid "HOST"
+msgstr ""
+
+#: gnome-netinfo/main.c:81
+msgid "Get netstat information.  Valid options are: route, active, multicast."
+msgstr ""
+
+#: gnome-netinfo/main.c:82
+msgid "COMMAND"
+msgstr ""
+
+#: gnome-netinfo/main.c:84
+#, fuzzy
+msgid "Trace a route to a network address"
+msgstr "ответ использует не правильный сетевой адрес"
+
+#: gnome-netinfo/main.c:87
+#, fuzzy
+msgid "Port scan a network address"
+msgstr "ответ использует не правильный сетевой адрес"
+
+#: gnome-netinfo/main.c:90
+#, fuzzy
+msgid "Look up a network address"
+msgstr "ответ использует не правильный сетевой адрес"
+
+#: gnome-netinfo/main.c:93
+msgid "Finger command to run"
+msgstr ""
+
+#: gnome-netinfo/main.c:94
+msgid "USER"
+msgstr ""
+
+#: gnome-netinfo/main.c:96
+msgid "Perform a whois lookup for a network domain"
+msgstr ""
+
+#: gnome-netinfo/main.c:97
+msgid "DOMAIN"
+msgstr ""
+
+#: gnome-netinfo/main.c:116
+#, c-format
+msgid ""
+"The file %s doesn't exist, please check if gnome-netinfo is correcly "
+"installed"
+msgstr ""
+
+#: gnome-netinfo/netinfo.c:157
+msgid "Network address not specified"
+msgstr ""
+
+#: gnome-netinfo/netinfo.c:165
+#, fuzzy, c-format
+msgid "The host '%s' cannot be found"
+msgstr "Этот счет не может быть удален."
+
+#: gnome-netinfo/netinfo.c:309
+msgid "Information not available"
+msgstr ""
+
+#: gnome-netinfo/netinfo.c:395
+msgid "Stop"
+msgstr ""
+
+#: gnome-netinfo/netinfo.c:401
+msgid "Run"
+msgstr ""
+
+#: gnome-netinfo/netstat.c:403
+msgid "Protocol"
+msgstr ""
+
+#: gnome-netinfo/netstat.c:410
+msgid "IP Source"
+msgstr ""
+
+#: gnome-netinfo/netstat.c:418
+msgid "Port/Service"
+msgstr ""
+
+#: gnome-netinfo/netstat.c:426 gnome-netinfo/scan.c:289
+#, fuzzy
+msgid "State"
+msgstr "Статус"
+
+#: gnome-netinfo/netstat.c:549
+#, fuzzy
+msgid "Destination/Prefix"
+msgstr "Аутентификация"
+
+#: gnome-netinfo/netstat.c:551
+#, fuzzy
+msgid "Destination"
+msgstr "Аутентификация"
+
+#: gnome-netinfo/netstat.c:558
+msgid "Gateway"
+msgstr ""
+
+#: gnome-netinfo/netstat.c:566
+msgid "Netmask"
+msgstr "Маска подсети"
+
+#: gnome-netinfo/netstat.c:574 gnome-netinfo/netstat.c:680
+msgid "Interface"
+msgstr ""
+
+#: gnome-netinfo/netstat.c:687
+msgid "Member"
+msgstr ""
+
+#: gnome-netinfo/netstat.c:695
+msgid "Group"
+msgstr ""
+
+#. The netstat "Display active network services" output in
+#. text format.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/netstat.c:737
+msgid "Protocol\tIP Source\tPort/Service\tState\n"
+msgstr ""
+
+#. The netstat "Display routing" output in text format.
+#. This seems as a route table.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/netstat.c:743
+msgid "Destination\tGateway\tNetmask\tInterface\n"
+msgstr ""
+
+#. The netstat "Multicast information" output in text format.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/netstat.c:748
+msgid "Interface\tMember\tGroup\n"
+msgstr ""
+
+#: gnome-netinfo/ping.c:378
+msgid "Bytes"
+msgstr ""
+
+#: gnome-netinfo/ping.c:385
+msgid "Source"
+msgstr ""
+
+#: gnome-netinfo/ping.c:393
+msgid "Seq"
+msgstr ""
+
+#: gnome-netinfo/ping.c:403
+msgid "Time"
+msgstr ""
+
+#: gnome-netinfo/ping.c:411
+msgid "Units"
+msgstr ""
+
+#. The ping output in text format:
+#. Bytes received, Address Source, Number of Sequence,
+#. Round Trip Time (Time), Units of Time.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/ping.c:437
+msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
+msgstr ""
+
+#. The ping output in a text format (to copy on clipboard)
+#: gnome-netinfo/ping.c:452
+#, c-format
+msgid "Time minimum:\t%s ms\n"
+msgstr ""
+
+#: gnome-netinfo/ping.c:453
+#, c-format
+msgid "Time average:\t%s ms\n"
+msgstr ""
+
+#: gnome-netinfo/ping.c:454
+#, c-format
+msgid "Time maximum:\t%s ms\n"
+msgstr ""
+
+#: gnome-netinfo/ping.c:456
+#, c-format
+msgid "Packets transmitted:\t%s\n"
+msgstr ""
+
+#: gnome-netinfo/ping.c:458
+#, c-format
+msgid "Packets received:\t%s\n"
+msgstr ""
+
+#: gnome-netinfo/ping.c:460
+#, c-format
+msgid "Packet loss:\t%s\n"
+msgstr ""
+
+#: gnome-netinfo/scan.c:151
+msgid "unknown"
+msgstr ""
+
+#: gnome-netinfo/scan.c:281
+msgid "Port"
+msgstr ""
+
+#: gnome-netinfo/scan.c:297
+msgid "Service"
+msgstr ""
+
+#. The portscan output in text format:
+#. Port, State, Service.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/scan.c:319
+msgid "Port\tState\tService\n"
+msgstr ""
+
+#: gnome-netinfo/traceroute.c:260
+msgid "Hop"
+msgstr ""
+
+#: gnome-netinfo/traceroute.c:268
+#, fuzzy
+msgid "Hostname"
+msgstr "Удаленное имя:"
+
+#: gnome-netinfo/traceroute.c:276
+msgid "IP"
+msgstr ""
+
+#: gnome-netinfo/traceroute.c:287
+msgid "Time 1"
+msgstr ""
+
+#: gnome-netinfo/traceroute.c:297
+msgid "Time 2"
+msgstr ""
+
+#. The traceroute output in text format:
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
+#. Round Trip Time 2 (Time2),
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/traceroute.c:323
+msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
+msgstr ""
+
+#: gnome-netinfo/utils.c:227
+#, c-format
+msgid "%s: Command not found"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.c:189
+#: network-utilities/gnome-remote-shell.c:216
+msgid "There is a connection error"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.c:284
+msgid "There is an error with displaying help"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.c:324
+msgid "Graphical user interface for GNOME Remote Shell"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.c:327
+msgid "This is an untranslated version of GNOME Remote Shell"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.c:373
+#: network-utilities/gnome-remote-shell.c:423
+#: network-utilities/gnome-remote-shell.c:550
+#, fuzzy
+msgid "Failed to create a connection"
+msgstr "Не удалось установить PPP-соединение."
+
+#: network-utilities/gnome-remote-shell.c:373
+msgid "A hostname is required"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.c:423
+msgid "A user name is required for SSH"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.c:501
+msgid "There is a command line error"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.c:550
+#, fuzzy
+msgid "The host cannot be found"
+msgstr "Этот счет не может быть удален."
+
+#: network-utilities/gnome-remote-shell.glade.h:3
+msgid "<span weight=\"bold\">Connect to remote host</span>"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.glade.h:4
+msgid "<span weight=\"bold\">Method</span>"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.glade.h:5
+msgid "<span weight=\"bold\">Window size</span>"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.glade.h:7
+#, fuzzy
+msgid "Connect to remote host"
+msgstr "Модем потерял соединение с удаленным хостом."
+
+#: network-utilities/gnome-remote-shell.glade.h:8
+msgid "H_eight:"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.glade.h:9
+msgid "H_ost:"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.glade.h:10
+msgid "Regular shell (_Telnet)"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.glade.h:11
+msgid "Use _default"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.glade.h:12
+#, fuzzy
+msgid "_Contents"
+msgstr "Соединиться"
+
+#: network-utilities/gnome-remote-shell.glade.h:13
+msgid "_Port:"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.glade.h:14
+msgid "_Secure shell (SSH)"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.glade.h:15
+msgid "_Shell"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.glade.h:16
+#, fuzzy
+msgid "_User:"
+msgstr "Имя пользователя"
+
+#: network-utilities/gnome-remote-shell.glade.h:17
+msgid "_Width:"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.glade.h:18
+msgid "characters"
+msgstr ""
+
+#: pws/pws-preferences-support.c:273
+msgid "Expander Size"
+msgstr ""
+
+#: pws/pws-preferences-support.c:274
+msgid "Size of the expander arrow"
+msgstr ""
+
+#: pws/pws-preferences-widget.c:112
+msgid "Web folder:"
+msgstr ""
+
+#: pws/pws-preferences-widget.c:116
+msgid "Select the folder to be published"
+msgstr ""
+
+#. Server status
+#: pws/pws-preferences-widget.c:125
+msgid "Enable web server"
+msgstr ""
+
+#. Additional options
+#: pws/pws-preferences-widget.c:133 pws/pws-preferences-widget.c:134
+#, fuzzy
+msgid "Additional options"
+msgstr "Синхронизация..."
+
+#: pws/pws-preferences-widget.c:156
+#, fuzzy
+msgid "Port number:"
+msgstr "Телефонные номера"
+
+#: pws/pws-preferences-widget.c:175
+msgid "Time out:"
+msgstr ""
+
+#: pws/pws-preferences-widget.c:194
+msgid "Keep alive"
+msgstr ""
+
+#: pws/pws.c:86
+msgid "/_Open Web Folder"
+msgstr ""
+
+#: pws/pws.c:179
+msgid "Personal web server preferences"
+msgstr ""
+
+#: pws/pws.c:194
+msgid "Personal Web Server Preferences"
+msgstr ""
+
+#: pws/pws.c:195
+msgid "Setup the options for your personal web server."
+msgstr ""

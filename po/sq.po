@@ -1,0 +1,1558 @@
+# Përkthimi i mesazheve të gnome-network në shqip
+# This file is distributed under the same license as the gnome-network package.
+# Copyright (C) 2004 Free Software Foundation, Inc.
+# Laurent Dhima <laurenti@alblinux.net>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-network HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-08-19 11:47+0200\n"
+"PO-Revision-Date: 2004-08-21 00:18+0200\n"
+"Last-Translator: Laurent Dhima <laurenti@alblinux.net>\n"
+"Language-Team: Albanian <gnome-albanian-perkthyesit@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: desktop/client/applet/applet.c:67 desktop/client/applet/applet.c:128
+msgid "GNOME Remote Desktop Applet"
+msgstr "Programi desktop në distancë i GNOME"
+
+#: desktop/client/gnome-remote-desktop.desktop.in.h:1
+msgid "Connect to a remote desktop computer"
+msgstr "Lidhu me hapësirën e punës së një kompjuteri në distancë"
+
+#: desktop/client/gnome-remote-desktop.desktop.in.h:2
+msgid "Remote Desktop Client"
+msgstr "Klienti për desktop në distancë "
+
+#: desktop/client/src/connect.c:75
+msgid "640 x 480 pixels"
+msgstr "640 x 480 pixels"
+
+#: desktop/client/src/connect.c:75
+msgid "800 x 600 pixels"
+msgstr "800 x 600 pixels"
+
+#: desktop/client/src/connect.c:76
+msgid "1024 x 768 pixels"
+msgstr "1024 x 768 pixels"
+
+#: desktop/client/src/connect.c:77
+msgid "1152 x 864 pixels"
+msgstr "1152 x 864 pixels"
+
+#: desktop/client/src/connect.c:78
+msgid "1280 x 960 pixels"
+msgstr "1280 x 960 pixels"
+
+#: desktop/client/src/connect.c:82
+msgid "256 Colors"
+msgstr "256 Ngjyra"
+
+#: desktop/client/src/connect.c:83
+msgid "High Color (15 bit)"
+msgstr "Ngjyrë e lartë (15 bit)"
+
+#: desktop/client/src/connect.c:84
+msgid "High Color (16 bit)"
+msgstr "Ngjyrë e lartë (16 bit)"
+
+#: desktop/client/src/connect.c:85
+msgid "True Color (24 bit)"
+msgstr "Ngjyra të vërteta (24 bit)"
+
+#: desktop/client/src/connect.c:286 desktop/client/src/connect.c:309
+#: desktop/client/src/connect.c:311 desktop/client/src/support.c:780
+msgid "GNOME Remote Desktop"
+msgstr "Hapësira e punës në distancë e GNOME"
+
+#.
+#. This is the input for the Compact mode
+#.
+#: desktop/client/src/connect.c:343 desktop/client/src/connect.c:554
+msgid "Compu_ter:"
+msgstr "Kompju_teri:"
+
+#: desktop/client/src/connect.c:367 desktop/client/src/connect.c:622
+msgid "Enter the name or address of the remote system."
+msgstr "Shkruaj emrin apo adresën e sistemit remot."
+
+#: desktop/client/src/connect.c:372 desktop/client/src/connect.c:629
+msgid "Select the protocol to use for this connection."
+msgstr "Zgjidh protokollin që duhet përdorur për këtë lidhje."
+
+#: desktop/client/src/connect.c:379 desktop/client/src/connect.c:636
+msgid ""
+"RDP protocol is used to connect to Microsoft Terminal Servers and Windows XP "
+"systems with desktop sharing."
+msgstr ""
+"Protokolli RDP përdoret për t'u lidhur me Microsoft Terminal Servers dhe sisteme "
+"Windows XP që afrojnë desktop të përbashkët."
+
+#: desktop/client/src/connect.c:384 desktop/client/src/connect.c:643
+msgid "VNC protocol is used to connect to systems sharing the desktop by using VNC."
+msgstr ""
+"Protokolli VNC përdoret për të lidhur sistemet që bashkëndajnë hapësirën e tyre "
+"të punës duke përdorur VNC."
+
+#: desktop/client/src/connect.c:393 desktop/client/src/connect.c:654
+msgid "XDMCP protocol uses Xnest to connect to servers running X."
+msgstr "Protokolli XDMCP përdor Xnest për t'u lidhur me serverët ku është në ekzekutim X."
+
+#: desktop/client/src/connect.c:398 desktop/client/src/connect.c:661
+msgid "ICA protocol is used to connect to Citrix servers."
+msgstr "Protokolli ICA përdoret për tu lidhur me serverët Citrix."
+
+#.
+#. This is the Profile Launcher
+#.
+#: desktop/client/src/connect.c:409
+msgid "Prof_ile Launcher:"
+msgstr "Lëshuesi i prof_ilit:"
+
+#: desktop/client/src/connect.c:422
+msgid "Select a saved profile to launch it immediately."
+msgstr "Zgjidh një nga profilet e ruajtur për t'a nisur menjëherë."
+
+#: desktop/client/src/connect.c:454
+msgid "_More"
+msgstr "_Akoma"
+
+#. GRUT modified this item
+#: desktop/client/src/connect.c:480 desktop/client/src/connect.c:1224
+#: network-utilities/gnome-remote-shell.glade.h:6
+msgid "Co_nnect"
+msgstr "Li_dhu"
+
+#.
+#. This is the label for the Connection Profile
+#.
+#: desktop/client/src/connect.c:489 desktop/client/src/connect.c:491
+msgid "Connection Profile"
+msgstr "Profili i lidhjes"
+
+#: desktop/client/src/connect.c:520 desktop/client/src/connect.c:522
+msgid "Logon Settings"
+msgstr "Rregullimet e futjes"
+
+#: desktop/client/src/connect.c:530
+msgid "Type the name of the computer or choose a computer from the drop-down list."
+msgstr "Shkruaj emrin e kompjuterit ose zgjidh një kompjuter nga lista."
+
+#: desktop/client/src/connect.c:562
+msgid "Pro_tocol:"
+msgstr "Pro_tokolli:"
+
+#. GRUT modified this item
+#: desktop/client/src/connect.c:570
+msgid "_User Name:"
+msgstr "Emri i _përdoruesit:"
+
+#: desktop/client/src/connect.c:578
+msgid "Pass_word:"
+msgstr "Fjalë_kalimi:"
+
+#: desktop/client/src/connect.c:586
+msgid "Do_main:"
+msgstr "Do_main:"
+
+#: desktop/client/src/connect.c:594
+msgid "C_lient Hostname:"
+msgstr "Emri i host i k_lientit:"
+
+#: desktop/client/src/connect.c:602
+msgid "Prot_ocol File:"
+msgstr "File i prot_okollit:"
+
+#: desktop/client/src/connect.c:677
+msgid ""
+"Enter the username for the remote system.\n"
+"For VNC, enter the path to your saved vnc password file."
+msgstr ""
+"Shkruaj emrin e përdoruesit për sistemin në distancë.\n"
+"Për VNC, shkruaj pozicionin e file të ruajtur me fjalëkalimin tuaj vnc."
+
+#: desktop/client/src/connect.c:686
+msgid "Enter the password for the remote system."
+msgstr "Shkruaj fjalëkalimin për sistemin remot."
+
+#: desktop/client/src/connect.c:694
+msgid "Enter the domain for the remote system."
+msgstr "Shkruaj domain për sistemin remot."
+
+#: desktop/client/src/connect.c:702
+msgid "Enter the local hostname for this system."
+msgstr "Shkruaj emrin e host lokal për këtë sistem."
+
+#: desktop/client/src/connect.c:714
+msgid ""
+"Some protocols require a file containing settings. If required, enter the "
+"path to the file here."
+msgstr ""
+
+#: desktop/client/src/connect.c:736 desktop/client/src/connect.c:738
+msgid "Remote Desktop Size"
+msgstr ""
+
+#: desktop/client/src/connect.c:756
+msgid "Use default screen size"
+msgstr ""
+
+#: desktop/client/src/connect.c:760
+msgid "Use the default screen size."
+msgstr ""
+
+#: desktop/client/src/connect.c:765
+msgid "Use specified screen size"
+msgstr ""
+
+#: desktop/client/src/connect.c:769
+msgid "Use the list to choose the screen size to use."
+msgstr ""
+
+#: desktop/client/src/connect.c:781
+msgid "Operate in full screen mode"
+msgstr ""
+
+#: desktop/client/src/connect.c:785
+msgid "Work in full screen mode."
+msgstr ""
+
+#: desktop/client/src/connect.c:794
+msgid "Use alternate full screen switch (-F)"
+msgstr ""
+
+#: desktop/client/src/connect.c:798
+msgid "Check this if you use rdesktop with the unified patches."
+msgstr ""
+
+#. GRUT modified this item
+#: desktop/client/src/connect.c:807 desktop/client/src/connect.c:809
+msgid "Colors"
+msgstr "Ngjyrat"
+
+#: desktop/client/src/connect.c:827
+msgid "Use default color depth"
+msgstr ""
+
+#: desktop/client/src/connect.c:831
+msgid "Use the default color depth."
+msgstr ""
+
+#: desktop/client/src/connect.c:836
+msgid "Use specified color depth"
+msgstr ""
+
+#: desktop/client/src/connect.c:840
+msgid "Use the list to choose the color depth to use."
+msgstr ""
+
+#: desktop/client/src/connect.c:864
+msgid "Remote Computer _Sound"
+msgstr ""
+
+#: desktop/client/src/connect.c:866
+msgid "Remote Computer Sound"
+msgstr ""
+
+#: desktop/client/src/connect.c:890 desktop/client/src/connect.c:926
+msgid "On the local computer"
+msgstr ""
+
+#: desktop/client/src/connect.c:893 desktop/client/src/connect.c:929
+msgid "On the remote computer"
+msgstr ""
+
+#: desktop/client/src/connect.c:896
+msgid "Do not play"
+msgstr ""
+
+#: desktop/client/src/connect.c:907
+msgid "_Keyboard"
+msgstr ""
+
+#. GRUT modified this item
+#: desktop/client/src/connect.c:909
+msgid "Keyboard"
+msgstr "Tastiera"
+
+#: desktop/client/src/connect.c:932
+msgid "In full screen mode only"
+msgstr ""
+
+#: desktop/client/src/connect.c:938
+msgid ""
+"Use the following keyboard language\n"
+"(2 char keycode)"
+msgstr ""
+
+#: desktop/client/src/connect.c:966
+msgid ""
+"Apply Windows key combinations\n"
+"(for example ALT+TAB) (unsupported)"
+msgstr ""
+
+#: desktop/client/src/connect.c:989 desktop/client/src/connect.c:991
+msgid "Start a Program"
+msgstr ""
+
+#: desktop/client/src/connect.c:1006
+msgid "Start the following program on connection"
+msgstr ""
+
+#: desktop/client/src/connect.c:1013
+msgid "Program path and filename"
+msgstr ""
+
+#: desktop/client/src/connect.c:1026
+msgid "Start in the following folder"
+msgstr ""
+
+#: desktop/client/src/connect.c:1048 desktop/client/src/connect.c:1050
+msgid "Optimize Performance"
+msgstr ""
+
+#: desktop/client/src/connect.c:1071
+msgid "Desktop background (u)"
+msgstr ""
+
+#: desktop/client/src/connect.c:1075
+msgid "Show content of window while dragging (u)"
+msgstr ""
+
+#: desktop/client/src/connect.c:1079
+msgid "Menu and window animation (u)"
+msgstr ""
+
+#: desktop/client/src/connect.c:1083
+msgid "Themes (u)"
+msgstr ""
+
+#: desktop/client/src/connect.c:1087
+msgid "Enable bitmap caching"
+msgstr ""
+
+#: desktop/client/src/connect.c:1091
+msgid "Do not send motion events"
+msgstr ""
+
+#: desktop/client/src/connect.c:1095
+msgid "Enable window manager's key bindings"
+msgstr ""
+
+#: desktop/client/src/connect.c:1100
+msgid "Options available for optimizing performance"
+msgstr ""
+
+#. GRUT modified this item
+#.
+#. These are the labels for the notebook control
+#.
+#: desktop/client/src/connect.c:1113
+msgid "_General"
+msgstr "_Të përgjithshme"
+
+#. GRUT modified this item
+#: desktop/client/src/connect.c:1118
+msgid "_Display"
+msgstr "_Shfaq"
+
+#: desktop/client/src/connect.c:1123
+msgid "Local _Resources"
+msgstr ""
+
+#: desktop/client/src/connect.c:1128
+msgid "_Programs"
+msgstr ""
+
+#: desktop/client/src/connect.c:1133
+msgid "Perf_ormance"
+msgstr ""
+
+#: desktop/client/src/connect.c:1197
+msgid "_Less"
+msgstr ""
+
+#: desktop/client/src/connect.c:1708
+msgid "Input a filename to save as..."
+msgstr ""
+
+#: desktop/client/src/connect.c:1750 desktop/client/src/connect.c:1795
+msgid "Choose an RDP file to open..."
+msgstr ""
+
+#: desktop/client/src/support.c:277
+msgid ""
+"rdesktop was not found in your path.\n"
+"Please verify your rdesktop installation."
+msgstr ""
+
+#: desktop/client/src/support.c:417
+msgid ""
+"vncviewer or xvncviewer were\n"
+" not found in your path.\n"
+"Please verify your vnc installation."
+msgstr ""
+
+#: desktop/client/src/support.c:519
+msgid ""
+"Xnest was not found in your path.\n"
+"Please verify your Xnest installation."
+msgstr ""
+
+#: desktop/client/src/support.c:578
+msgid ""
+"wfica was not found in your path.\n"
+"Please verify your ICAClient installation."
+msgstr ""
+
+#: desktop/client/src/support.c:702
+msgid ""
+"Failed to spawn.\n"
+"Please verify your installation."
+msgstr ""
+
+#. create the widgets
+#: desktop/client/src/support.c:744
+msgid "GNOME Remote Desktop Error"
+msgstr ""
+
+#. GRUT modified this item
+#: desktop/client/src/support.c:750 desktop/client/src/support.c:756
+msgid "An error has occurred."
+msgstr "U verifikua një gabim."
+
+#. GRUT modified this item
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:1
+msgid "Check this to enable desktop sharing in GNOME"
+msgstr ""
+"Zgjidhe këtë për të aktivuar ndarjen me të tjerët të hapësirës së punës në "
+"GNOME"
+
+#. GRUT modified this item
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:2
+msgid "Password to connect to desktop sharing"
+msgstr "Fjalëkalimi për t'u lidhur tek hapësira e punës e përbashkët"
+
+#. GRUT modified this item
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:3
+msgid ""
+"Set this to the password clients should use to connect to your desktop "
+"remotely"
+msgstr ""
+"Vendose këtë tek fjalëkalimi që klientët duhet të përdorin për t'u lidhur me "
+"hapësirën tuaj të punës në distancë"
+
+#. GRUT modified this item
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:4
+msgid "Whether to enable desktop sharing"
+msgstr "Nëse aktivon bashkëndarjen e hapësirës së punës"
+
+#. GRUT modified this item
+#: desktop/preferences/interface.c:49 desktop/preferences/interface.c:64
+#: desktop/server/tray.c:167
+msgid "Desktop Sharing"
+msgstr "Bashkëndarja e hapësirës së punës"
+
+#. GRUT modified this item
+#: desktop/preferences/interface.c:73
+msgid "_Share my desktop with others"
+msgstr "_Bashkëndan hapësirën time të punës me të tjerët"
+
+#. GRUT modified this item
+#: desktop/preferences/interface.c:79
+msgid "Enable this option to allow others to view your desktop"
+msgstr ""
+"Aktivo këtë opcion për t'u dhënë mundësi të tjerëve të shohin hapësirën "
+"tënde të punës"
+
+#. GRUT modified this item
+#: desktop/preferences/interface.c:94
+msgid ""
+"The following information will need to be supplied by the user connecting to "
+"your desktop"
+msgstr ""
+"Informacionet në vazhdim duhen plotësuar nga përdoruesi që do të lidhet me "
+"hapësirën tuaj të punës"
+
+#. GRUT modified this item
+#: desktop/preferences/interface.c:105
+msgid "Password"
+msgstr "Fjalëkalimi"
+
+#. GRUT modified this item
+#: desktop/preferences/interface.c:123
+msgid "Automatically accept clients"
+msgstr "Prano automatikisht klientët"
+
+#. GRUT modified this item
+#: desktop/preferences/support.c:60 desktop/preferences/support.c:85
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr "E pamundur gjetja e file pixmap: %s"
+
+#. GRUT modified this item
+#: desktop/server/eggtrayicon.c:118
+msgid "Orientation"
+msgstr "Orientimi"
+
+#. GRUT modified this item
+#: desktop/server/eggtrayicon.c:119
+msgid "The orientation of the tray."
+msgstr "Orientimi i sirtarit."
+
+#. GRUT modified this item
+#: desktop/server/tray.c:66 pws/pws.c:85
+msgid "/_Preferences"
+msgstr "/_Preferimet"
+
+#. GRUT modified this item
+#: desktop/server/tray.c:67
+msgid "/_Clients"
+msgstr "/_Klientë"
+
+#. GRUT modified this item
+#: desktop/server/tray.c:69
+msgid "/_About"
+msgstr "/_Informacione"
+
+#. GRUT modified this item
+#: desktop/server/tray.c:70 pws/pws.c:88
+msgid "/_Quit"
+msgstr "/_Dil"
+
+#. GRUT modified this item
+#: desktop/server/tray.c:122
+msgid "Your desktop is viewable to others"
+msgstr "Hapësira juaj e punës është e shikueshme nga të tjerët"
+
+#. GRUT modified this item
+#: desktop/server/tray.c:169
+msgid "Remote Desktop Sharing"
+msgstr "Bashkëndarja në distancë e hapësirës së punës"
+
+#. GRUT modified this item
+#: desktop/server/tray.c:172 gnome-netinfo/callbacks.c:214
+msgid "This is an untranslated version of GNOME Network Information"
+msgstr "Ky është një version i papërkthyer i Informacioneve të Rrjetit të GNOME"
+
+#. GRUT modified this item
+#: desktop/server/tray.c:407
+msgid "Clients currently viewing your desktop"
+msgstr "Klientët që janë duke shikuar aktualisht hapësirën tuaj të punës"
+
+#. GRUT modified this item
+#: desktop/server/tray.c:429
+msgid "Disconnect"
+msgstr "Shkëputu"
+
+#. GRUT modified this item
+#: desktop/server/x11vnc.c:346
+#, c-format
+msgid "Host %s is no longer viewing your desktop"
+msgstr "Host %s nuk është duke shikuar më hapësirën tuaj të punës"
+
+#. GRUT modified this item
+#: desktop/server/x11vnc.c:419
+#, c-format
+msgid "Host %s is trying to view your desktop, allow them?"
+msgstr "Host %s po kërkon të shohë hapësirën tuaj të punës, i jep leje?"
+
+#. GRUT modified this item
+#: desktop/server/x11vnc.c:445
+#, c-format
+msgid "Host %s is now viewing your desktop"
+msgstr "Host %s është duke shikuar tani hapësirën tuaj të punës"
+
+#. GRUT modified this item
+#: gnome-netinfo/callbacks.c:212
+msgid "Graphical user interface for common network utilities"
+msgstr "Interfaqe grafike përdoruesi për programet e zakonshëm ndihmues të rrjetit"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:1
+#: network-utilities/gnome-remote-shell.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: gnome-netinfo/gnome-netinfo.glade.h:2
+msgid "(eg. user@www.domain.com)"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:3
+msgid "(for example: domain.com)"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:4
+msgid "(for example: www.domain.com or 192.168.2.1)"
+msgstr ""
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:5
+#: network-utilities/gnome-remote-shell.glade.h:2
+msgid "*"
+msgstr "*"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:6
+msgid "0.0"
+msgstr "0.0"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:7
+msgid "<span weight=\"bold\">@</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:8
+msgid ""
+"<span weight=\"bold\">Enter a domain address to lookup its \"whois\" "
+"information</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:9
+msgid "<span weight=\"bold\">Enter a network address to lookup</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:10
+msgid ""
+"<span weight=\"bold\">Enter a user name and network address to finger that "
+"user</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:11
+msgid "<span weight=\"bold\">Enter the network address to ping</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:12
+msgid "<span weight=\"bold\">Enter the network address to scan for open ports</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:13
+msgid "<span weight=\"bold\">Enter the network address to trace a route to</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:14
+msgid "<span weight=\"bold\">Information</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:15
+msgid "<span weight=\"bold\">Round trip time statistics</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:16
+msgid "<span weight=\"bold\">Select the network device to get information on</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:17
+msgid "<span weight=\"bold\">Select the type of information to display</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:18
+msgid "<span weight=\"bold\">Select the type of information to lookup:</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:19
+msgid "<span weight=\"bold\">Statistics</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:20
+msgid "<span weight=\"bold\">Transmission statistics</span>"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:21
+msgid "Any / All Information"
+msgstr ""
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:22
+msgid "Average:"
+msgstr "Mesatarja:"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:23
+msgid "Broadcast:"
+msgstr "Broadcast:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:24
+msgid "CPU / OS Type"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:25
+msgid "Canonical Name"
+msgstr ""
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:26
+msgid "Clear _History"
+msgstr "Pastron _Historinë"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:27
+msgid "Collisions:"
+msgstr "Përplasje:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:28
+msgid "Default Information"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:29
+msgid "Display active network services"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:30
+msgid "Display multicast information"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:31
+msgid "Display routing table information"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:32
+msgid "Enter the network address to ping"
+msgstr ""
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:33 gnome-netinfo/main.c:530
+msgid "Finger"
+msgstr "Treguesi"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:34
+msgid "Hardware address:"
+msgstr "Adresa hardware:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:35
+msgid "Host name for Address"
+msgstr ""
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:36
+msgid "IP address:"
+msgstr "Adresa IP:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:37
+msgid "Internet Address"
+msgstr ""
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:38
+msgid "Link speed:"
+msgstr "Shpejtësia e lidhjes:"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:39 gnome-netinfo/main.c:485
+msgid "Lookup"
+msgstr "Mbikqyr"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:40
+msgid "MTU:"
+msgstr "MTU:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:41
+msgid "Mailbox Exchange"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:42
+msgid "Mailbox Information"
+msgstr ""
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:43
+msgid "Maximum:"
+msgstr "Maksimumi:"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:44
+msgid "Minimum:"
+msgstr "Minimumi:"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:45
+msgid "Multicast:"
+msgstr "Multicast:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:46
+msgid "Name Server"
+msgstr ""
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:47
+msgid "Netmask:"
+msgstr "Maska e rrjetit:"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:48 gnome-netinfo/main.c:349
+msgid "Netstat"
+msgstr "Gjendja e rrjetit"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:49 gnome-netinfo/main.c:110
+msgid "Network Information"
+msgstr "Informacionet e rrjetit"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:50
+msgid "Packets loss:"
+msgstr "Paketa të humbura:"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:51
+msgid "Packets received:"
+msgstr "Paketa të marra:"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:52
+msgid "Packets transmitted:"
+msgstr "Paketa të dërguara:"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:53 gnome-netinfo/main.c:257
+msgid "Ping"
+msgstr "Ping"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:54
+msgid "Port _Scan"
+msgstr ""
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:55
+msgid "Received bytes:"
+msgstr "Bytes të marrë:"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:56
+msgid "Received packets:"
+msgstr "Paketa të marra:"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:57
+msgid "Reception errors:"
+msgstr "Gabime në marrje:"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:58 gnome-netinfo/main.c:447
+msgid "Scan"
+msgstr "Skanim"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:59
+msgid "Select network device from list"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:60
+msgid "Send only"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:61
+msgid "Send unlimited requests (pings)"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:62
+msgid "Start-of-authority"
+msgstr ""
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:63
+msgid "State:"
+msgstr "Gjendja:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:64
+msgid "Text Information"
+msgstr ""
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:65 gnome-netinfo/main.c:305
+msgid "Trace"
+msgstr "Gjurma"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:66
+msgid "Transmission errors:"
+msgstr "Gabime në trasmetim:"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:67
+msgid "Transmitted bytes:"
+msgstr "Bytes e transmetuar:"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:68
+msgid "Transmitted packets:"
+msgstr "Paketat e transmetuara:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:69
+msgid "Well Known Services"
+msgstr ""
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:70 gnome-netinfo/main.c:581
+msgid "Whois"
+msgstr "Kush është"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:71
+msgid "_Devices"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:72
+msgid "_Finger"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:73
+msgid "_Information"
+msgstr ""
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:74
+msgid "_Lookup"
+msgstr "_Kërko"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:75
+msgid "_Netstat"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:76
+msgid "_Ping"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:77
+msgid "_Traceroute"
+msgstr ""
+
+#: gnome-netinfo/gnome-netinfo.glade.h:78
+msgid "_Whois"
+msgstr ""
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:79
+msgid "ms"
+msgstr "ms"
+
+#. GRUT modified this item
+#: gnome-netinfo/gnome-netinfo.glade.h:80
+msgid "not available"
+msgstr "jo në dispozicion"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:81
+msgid "requests (pings)"
+msgstr ""
+
+#. GRUT modified this item
+#: gnome-netinfo/info.c:277
+msgid "Active"
+msgstr "Aktiv"
+
+#. GRUT modified this item
+#: gnome-netinfo/info.c:279
+msgid "Inactive"
+msgstr "Jo aktiv"
+
+#. GRUT modified this item
+#: gnome-netinfo/info.c:284
+msgid "Loopback"
+msgstr "Loopback"
+
+#. GRUT modified this item
+#: gnome-netinfo/info.c:297
+msgid "Enabled"
+msgstr "Aktiv"
+
+#. GRUT modified this item
+#: gnome-netinfo/info.c:299
+msgid "Disabled"
+msgstr "Jo aktiv"
+
+#. GRUT modified this item
+#. The info output in a text format (to copy on clipboard)
+#: gnome-netinfo/info.c:419
+#, c-format
+msgid "Network device:\t%s\n"
+msgstr "Dispozitivi i rrjetit:\t%s\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/info.c:420
+#, c-format
+msgid "Hardware address:\t%s\n"
+msgstr "Adresa hardware:\t%s\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/info.c:421
+#, c-format
+msgid "IP address:\t%s\n"
+msgstr "Adresa IP:\t%s\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/info.c:422
+#, c-format
+msgid "Netmask:\t%s\n"
+msgstr "Netmask:\t%s\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/info.c:423
+#, c-format
+msgid "Broadcast:\t%s\n"
+msgstr "Broadcast:\t%s\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/info.c:424
+#, c-format
+msgid "Multicast:\t%s\n"
+msgstr "Multicast:\t%s\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/info.c:425
+#, c-format
+msgid "MTU:\t%s\n"
+msgstr "MTU:\t%s\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/info.c:426
+#, c-format
+msgid "Link speed:\t%s\n"
+msgstr "Shpejtësia e lidhjes:\t%s\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/info.c:427
+#, c-format
+msgid "State:\t%s\n"
+msgstr "Gjendja:\t%s\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/info.c:429
+#, c-format
+msgid "Transmitted packets:\t%s\n"
+msgstr "Paketat e transmetuara:\t%s\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/info.c:430
+#, c-format
+msgid "Transmission errors:\t%s\n"
+msgstr "Gabimet në transmision:\t%s\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/info.c:431
+#, c-format
+msgid "Received packets:\t%s\n"
+msgstr "Paketat e marra:\t%s\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/info.c:432
+#, c-format
+msgid "Reception errors:\t%s\n"
+msgstr "Gabimet në marrje:\t%s\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/info.c:433
+#, c-format
+msgid "Collisions:\t%s\n"
+msgstr "Përplasje:\t%s\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/lookup.c:272
+msgid "Name"
+msgstr "Emri"
+
+#. GRUT modified this item
+#: gnome-netinfo/lookup.c:280
+msgid "TTL"
+msgstr "TTL"
+
+#. GRUT modified this item
+#: gnome-netinfo/lookup.c:289
+msgid "Address Type"
+msgstr "Lloji i adresës"
+
+#. GRUT modified this item
+#: gnome-netinfo/lookup.c:299
+msgid "Record Type"
+msgstr "Lloji i regjistrimit"
+
+#. GRUT modified this item
+#: gnome-netinfo/lookup.c:308
+msgid "Address"
+msgstr "Adresa"
+
+#. GRUT modified this item
+#. The lookup output in text format:
+#. Source of query (hostname/ip address),
+#. Time To Live (TTL), Address Type,
+#. Record Type (A, PTR, HINFO, NS, TXT, etc.),
+#. Resolution (results of the query)
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/lookup.c:336
+msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
+msgstr "Burimi\tTTL\tLloji i Adresës\tRegjistrim i Llojit1\tZgjidhja\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/main.c:75
+msgid "Load information for a network device"
+msgstr "Ngarko informacionet për një dispozitiv rrjeti"
+
+#. GRUT modified this item
+#: gnome-netinfo/main.c:76
+msgid "DEVICE"
+msgstr "DISPOZITIVI"
+
+#. GRUT modified this item
+#: gnome-netinfo/main.c:78
+msgid "Send a ping to a network address"
+msgstr "Dërgo \"ping\" një adrese rrjeti"
+
+#. GRUT modified this item
+#: gnome-netinfo/main.c:79 gnome-netinfo/main.c:85 gnome-netinfo/main.c:88
+#: gnome-netinfo/main.c:91
+msgid "HOST"
+msgstr "HOST"
+
+#. GRUT modified this item
+#: gnome-netinfo/main.c:81
+msgid "Get netstat information.  Valid options are: route, active, multicast."
+msgstr ""
+"Merr informacionet netstat.  Opcione të vlefshme janë: route, active, "
+"multicast."
+
+#. GRUT modified this item
+#: gnome-netinfo/main.c:82
+msgid "COMMAND"
+msgstr "KOMANDA"
+
+#. GRUT modified this item
+#: gnome-netinfo/main.c:84
+msgid "Trace a route to a network address"
+msgstr "Gjurmo shtegun për tek një adresë rrjeti"
+
+#. GRUT modified this item
+#: gnome-netinfo/main.c:87
+msgid "Port scan a network address"
+msgstr "Skano portat e një adrese rrjeti"
+
+#. GRUT modified this item
+#: gnome-netinfo/main.c:90
+msgid "Look up a network address"
+msgstr "Kontrollo një adresë rrjeti"
+
+#. GRUT modified this item
+#: gnome-netinfo/main.c:93
+msgid "Finger command to run"
+msgstr "Komanda e kërkimit për t'u zbatuar"
+
+#. GRUT modified this item
+#: gnome-netinfo/main.c:94
+msgid "USER"
+msgstr "PËRDORUES"
+
+#. GRUT modified this item
+#: gnome-netinfo/main.c:96
+msgid "Perform a whois lookup for a network domain"
+msgstr "Kryej një kontroll \"whois\" për një domain rrjeti"
+
+#. GRUT modified this item
+#: gnome-netinfo/main.c:97
+msgid "DOMAIN"
+msgstr "DOMAIN"
+
+#. GRUT modified this item
+#: gnome-netinfo/main.c:116
+#, c-format
+msgid ""
+"The file %s doesn't exist, please check if gnome-netinfo is correcly "
+"installed"
+msgstr ""
+"File %s nuk ekziston, kontrollo që gnome-netinfo të jetë instaluar me "
+"korrektësi"
+
+#: gnome-netinfo/netinfo.c:157
+msgid "Network address not specified"
+msgstr ""
+
+#: gnome-netinfo/netinfo.c:165
+#, c-format
+msgid "The host '%s' cannot be found"
+msgstr ""
+
+#. GRUT modified this item
+#: gnome-netinfo/netinfo.c:309
+msgid "Information not available"
+msgstr "Asnjë informacion"
+
+#. GRUT modified this item
+#: gnome-netinfo/netinfo.c:395
+msgid "Stop"
+msgstr "Ndal"
+
+#. GRUT modified this item
+#: gnome-netinfo/netinfo.c:401
+msgid "Run"
+msgstr "Ekzekuto"
+
+#. GRUT modified this item
+#: gnome-netinfo/netstat.c:403
+msgid "Protocol"
+msgstr "Protokolli"
+
+#. GRUT modified this item
+#: gnome-netinfo/netstat.c:410
+msgid "IP Source"
+msgstr "Burimi IP"
+
+#. GRUT modified this item
+#: gnome-netinfo/netstat.c:418
+msgid "Port/Service"
+msgstr "Porta/Shërbimi"
+
+#: gnome-netinfo/netstat.c:426 gnome-netinfo/scan.c:289
+msgid "State"
+msgstr ""
+
+#. GRUT modified this item
+#: gnome-netinfo/netstat.c:549
+msgid "Destination/Prefix"
+msgstr "Destinimi/Prefix"
+
+#. GRUT modified this item
+#: gnome-netinfo/netstat.c:551
+msgid "Destination"
+msgstr "Destinimi"
+
+#. GRUT modified this item
+#: gnome-netinfo/netstat.c:558
+msgid "Gateway"
+msgstr "Portë hyrëse"
+
+#. GRUT modified this item
+#: gnome-netinfo/netstat.c:566
+msgid "Netmask"
+msgstr "Netmask"
+
+#. GRUT modified this item
+#: gnome-netinfo/netstat.c:574 gnome-netinfo/netstat.c:680
+msgid "Interface"
+msgstr "Interfaqja"
+
+#. GRUT modified this item
+#: gnome-netinfo/netstat.c:687
+msgid "Member"
+msgstr "Anëtar"
+
+#: gnome-netinfo/netstat.c:695
+msgid "Group"
+msgstr ""
+
+#. GRUT modified this item
+#. The netstat "Display active network services" output in
+#. text format.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/netstat.c:737
+msgid "Protocol\tIP Source\tPort/Service\tState\n"
+msgstr "Protokolli\tBurimi IP\tPorta/Shërbimi\tGjendja\n"
+
+#. GRUT modified this item
+#. The netstat "Display routing" output in text format.
+#. This seems as a route table.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/netstat.c:743
+msgid "Destination\tGateway\tNetmask\tInterface\n"
+msgstr "Destinimi\tGateway\tNetmask\tInterfaqja\n"
+
+#. GRUT modified this item
+#. The netstat "Multicast information" output in text format.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/netstat.c:748
+msgid "Interface\tMember\tGroup\n"
+msgstr "Interfaqja\tAnëtari\tGrupi\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/ping.c:378
+msgid "Bytes"
+msgstr "Bytes"
+
+#. GRUT modified this item
+#: gnome-netinfo/ping.c:385
+msgid "Source"
+msgstr "Burimi"
+
+#. GRUT modified this item
+#: gnome-netinfo/ping.c:393
+msgid "Seq"
+msgstr "Sek"
+
+#. GRUT modified this item
+#: gnome-netinfo/ping.c:403
+msgid "Time"
+msgstr "Ora"
+
+#. GRUT modified this item
+#: gnome-netinfo/ping.c:411
+msgid "Units"
+msgstr "Njësitë"
+
+#. GRUT modified this item
+#. The ping output in text format:
+#. Bytes received, Address Source, Number of Sequence,
+#. Round Trip Time (Time), Units of Time.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/ping.c:437
+msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
+msgstr "Bytes\tBurimi\tSek\tKoha\tNjësitë\n"
+
+#. GRUT modified this item
+#. The ping output in a text format (to copy on clipboard)
+#: gnome-netinfo/ping.c:452
+#, c-format
+msgid "Time minimum:\t%s ms\n"
+msgstr "Koha minimum:\t%s ms\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/ping.c:453
+#, c-format
+msgid "Time average:\t%s ms\n"
+msgstr "Koha mesatare:\t%s ms\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/ping.c:454
+#, c-format
+msgid "Time maximum:\t%s ms\n"
+msgstr "Koha maksimum:\t%s ms\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/ping.c:456
+#, c-format
+msgid "Packets transmitted:\t%s\n"
+msgstr "Paketa të transmetuara:\t%s\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/ping.c:458
+#, c-format
+msgid "Packets received:\t%s\n"
+msgstr "Paketa të marra:\t%s\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/ping.c:460
+#, c-format
+msgid "Packet loss:\t%s\n"
+msgstr "Paketa të humbura:\t%s\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/scan.c:151
+msgid "unknown"
+msgstr "nuk njihet"
+
+#. GRUT modified this item
+#: gnome-netinfo/scan.c:281
+msgid "Port"
+msgstr "Porta"
+
+#. GRUT modified this item
+#: gnome-netinfo/scan.c:297
+msgid "Service"
+msgstr "Shërbimi"
+
+#. GRUT modified this item
+#. The portscan output in text format:
+#. Port, State, Service.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/scan.c:319
+msgid "Port\tState\tService\n"
+msgstr "Porta\tGjendja\tShërbimi\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/traceroute.c:260
+msgid "Hop"
+msgstr "Hop"
+
+#. GRUT modified this item
+#: gnome-netinfo/traceroute.c:268
+msgid "Hostname"
+msgstr "Emri i host"
+
+#. GRUT modified this item
+#: gnome-netinfo/traceroute.c:276
+msgid "IP"
+msgstr "IP"
+
+#. GRUT modified this item
+#: gnome-netinfo/traceroute.c:287
+msgid "Time 1"
+msgstr "Koha 1"
+
+#. GRUT modified this item
+#: gnome-netinfo/traceroute.c:297
+msgid "Time 2"
+msgstr "Koha 2"
+
+#. GRUT modified this item
+#. The traceroute output in text format:
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
+#. Round Trip Time 2 (Time2),
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/traceroute.c:323
+msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
+msgstr "Hop\tEmri i host\tIP\tKoha 1\tKoha 2\n"
+
+#. GRUT modified this item
+#: gnome-netinfo/utils.c:227
+#, c-format
+msgid "%s: Command not found"
+msgstr "%s: Komanda nuk u gjet"
+
+#: network-utilities/gnome-remote-shell.c:189
+#: network-utilities/gnome-remote-shell.c:216
+msgid "There is a connection error"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.c:284
+msgid "There is an error with displaying help"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.c:324
+msgid "Graphical user interface for GNOME Remote Shell"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.c:327
+msgid "This is an untranslated version of GNOME Remote Shell"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.c:373
+#: network-utilities/gnome-remote-shell.c:423
+#: network-utilities/gnome-remote-shell.c:550
+msgid "Failed to create a connection"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.c:373
+msgid "A hostname is required"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.c:423
+msgid "A user name is required for SSH"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.c:501
+msgid "There is a command line error"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.c:550
+msgid "The host cannot be found"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.glade.h:3
+msgid "<span weight=\"bold\">Connect to remote host</span>"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.glade.h:4
+msgid "<span weight=\"bold\">Method</span>"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.glade.h:5
+msgid "<span weight=\"bold\">Window size</span>"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.glade.h:7
+msgid "Connect to remote host"
+msgstr ""
+
+#. GRUT modified this item
+#: network-utilities/gnome-remote-shell.glade.h:8
+msgid "H_eight:"
+msgstr "L_artësia:"
+
+#: network-utilities/gnome-remote-shell.glade.h:9
+msgid "H_ost:"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.glade.h:10
+msgid "Regular shell (_Telnet)"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.glade.h:11
+msgid "Use _default"
+msgstr ""
+
+#. GRUT modified this item
+#: network-utilities/gnome-remote-shell.glade.h:12
+msgid "_Contents"
+msgstr "_Përmbajtja"
+
+#. GRUT modified this item
+#: network-utilities/gnome-remote-shell.glade.h:13
+msgid "_Port:"
+msgstr "_Porta:"
+
+#: network-utilities/gnome-remote-shell.glade.h:14
+msgid "_Secure shell (SSH)"
+msgstr ""
+
+#: network-utilities/gnome-remote-shell.glade.h:15
+msgid "_Shell"
+msgstr ""
+
+#. GRUT modified this item
+#: network-utilities/gnome-remote-shell.glade.h:16
+msgid "_User:"
+msgstr "_Përdoruesi:"
+
+#. GRUT modified this item
+#: network-utilities/gnome-remote-shell.glade.h:17
+msgid "_Width:"
+msgstr "_Gjerësia:"
+
+#: network-utilities/gnome-remote-shell.glade.h:18
+msgid "characters"
+msgstr ""
+
+#. GRUT modified this item
+#: pws/pws-preferences-support.c:273
+msgid "Expander Size"
+msgstr "Madhësia e shpalosësit"
+
+#. GRUT modified this item
+#: pws/pws-preferences-support.c:274
+msgid "Size of the expander arrow"
+msgstr "Madhësia e shigjetës së shpalosësit"
+
+#: pws/pws-preferences-widget.c:112
+msgid "Web folder:"
+msgstr ""
+
+#: pws/pws-preferences-widget.c:116
+msgid "Select the folder to be published"
+msgstr ""
+
+#. Server status
+#: pws/pws-preferences-widget.c:125
+msgid "Enable web server"
+msgstr ""
+
+#. Additional options
+#: pws/pws-preferences-widget.c:133 pws/pws-preferences-widget.c:134
+msgid "Additional options"
+msgstr ""
+
+#. GRUT modified this item
+#: pws/pws-preferences-widget.c:156
+msgid "Port number:"
+msgstr "Numri i portës:"
+
+#: pws/pws-preferences-widget.c:175
+msgid "Time out:"
+msgstr ""
+
+#: pws/pws-preferences-widget.c:194
+msgid "Keep alive"
+msgstr ""
+
+#: pws/pws.c:86
+msgid "/_Open Web Folder"
+msgstr ""
+
+#: pws/pws.c:179
+msgid "Personal web server preferences"
+msgstr ""
+
+#: pws/pws.c:194
+msgid "Personal Web Server Preferences"
+msgstr ""
+
+#: pws/pws.c:195
+msgid "Setup the options for your personal web server."
+msgstr ""
+

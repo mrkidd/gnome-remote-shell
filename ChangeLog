@@ -1,0 +1,196 @@
+2004-08-24  Mason Kidd  <mrkidd@mrkidd.com>
+
+	* Moved gnome-remote-shell into it's own module.
+	
+2004-01-05  Ulrich Neumann <U_Neumann@gne.de>
+
+	* gnome-remote-shell.glade: removed the Quit button.
+
+2004-01-03  Rodrigo Moya <rodrigo@ximian.com>
+
+	* gnome-remote-shell.glade: changed 'File' to 'Shell' in the menu bar.
+
+2004-01-03  Rodrigo Moya <rodrigo@ximian.com>
+
+	* gnome-remote-shell.c (main): re-added DIALOGDIR to the file
+	name, or it won't be found.
+	(on_about_activate): added Emil and Carlos to list of authors.
+	
+2004-01-03  Ulrich Neumann <U_Neumann@gne.de>
+
+	* gnome-remote-shell.glade:
+	* gnome-remote-shell.c: convert main UI to a window, and make
+	it keep running after opening remote connections.
+
+2003-12-17  Mason Kidd <mason_kidd@mrkidd.com>
+
+	* Makefile.am:
+	* gnome-remote-shell.desktop.in: renamed
+	gnome-network-utilities.desktop.in.
+
+2003-12-09  Emil Soleyman-Zomalan <emil@nishra.com>
+
+	* gnome-remote-shell.c: replaced obsolete gnome_error_dialog_*
+	with GtkMessageDialog's, and implemented the 'Help' button in
+	the dialog.
+
+2003-12-09  Carlos Garcia Campos <carlosgc@gnome.org>
+
+	* gnome-remote-shell.c (main): DIALOGDIR instead of DATADIR in the 
+	.glade file path
+	
+2003-12-09  Rodrigo Moya <rodrigo@gnome-db.org>
+
+	* help/C/figures/gnome-remote-shell_window.png: added missing image
+	from previous patch.
+
+2003-12-07  Emil Soleyman-Zomalan <emil@nishra.com>
+
+	* Makefile.am:
+	* help/*: added first version of the online help.
+
+2003-12-07  Rodrigo Moya <rodrigo@gnome-db.org>
+
+	* gnome-remote-shell.c: added missing headers.
+
+2003-12-07  Emil Soleyman-Zomalan <emil@nishra.com>
+
+	Fixes #128261
+
+	* gnome-remote-shell.glade: change the gears image to a return arrow.
+
+	* gnome-remote-shell.c (port_default_toggled_cb): update port entry
+	when 'Default' check box is selected.
+
+	* gnome-network-utilities.desktop.in: capitalize menu entry.
+
+2003-12-07  Joe Marcus Clarke <marcus@freebsd.org>
+
+	Fixes part of #128719
+
+	* gnome-remote-shell.c: added needed headers for BSD compilation.
+
+2003-10-03  Carlos Garcia Campos <carlosgc@gnome.org>
+
+	* gnome-remote-shell.c (check_network_status, validate_host,
+	  get_ip_version): added IPv6 support
+
+2003-09-03  Emil Soleyman-Zomalan <emil@nishra.com>
+
+	* gnome-remote-shell.c: made it work correctly with any gnome-terminal
+	argument (-e or -x).
+
+2003-08-31  Carlos Garcia Campos <carlosgc@gnome.org>
+
+	* gnome-remote-shell.c (check_network_status): added check to detect
+	the availability of the selected server/service.
+
+2003-08-26  Carlos Garcia Campos <elkalmail@yahoo.es>
+
+	* gnome-remote-shell.c (activate_shell): fixed typo in command string.
+
+2003-08-25  William Jon McCann  <mccann@jhu.edu>
+
+	* gnome-remote-shell.c (main): Added code to use default icon.
+
+2003-07-31  William Jon McCann  <mccann@jhu.edu>
+
+	* Makefile.am (EXTRA_DIST): Added missing glade file.
+
+2003-07-31  Rodrigo Moya <rodrigo@gnome-db.org>
+
+	* gnome-remote-shell.png: added new icon from apg.
+
+	* Makefile.am:
+	* gnome-network-utilities.desktop.in: added new icon.
+
+2003-07-06  William Jon McCann  <mccann@jhu.edu>
+
+	* gnome-remote-shell.c: #define port numbers.  Made port numbers change when changing
+	connection method.  Added history to user entry.
+
+	* gnome-remote-shell.glade: Added colons after text labels (per HIG).  Made User entry
+	a gnome-entry with history.
+
+2003-06-10  Theo van Klaveren <t.vanklaveren@student.utwente.nl>
+
+        Many updates to gnome-remote-shell, see bug #114826.
+
+	* network-utilities/Makefile.am: Add gnome-remote-shell.glade.
+	* network-utilities/gnome-remote-shell.c: Use GLADE for the user interace.
+	Add 'use default port' checkbox. Split shell activation into activate_shell() function.
+	Activate when enter is pressed in text entries. Save host name history.  Try to look up
+	hostname before launching shell.  Use user's terminal prefs from 'default applications'.
+	Remove the --hide-menubar parameter to terminal.
+
+2003-06-06  Rodrigo Moya <rodrigo@gnome-db.org>
+
+	* gnome-network-utilities.desktop: moved to .desktop.in.
+
+	* Makefile.am: added correct @INTLTOOL_DESKTOP_RULE@.
+
+2003-02-06  Rodrigo Moya <rodrigo@gnome-db.org>
+
+	* gnome-remote-shell.c (dialog_response_cb): use HIG compliant window
+	titles.
+
+2002-12-13  German Poo-Caaman~o <gpoo@ubiobio.cl>
+
+	* gnome-remote-shell.c: Fixed compilation warnings.
+		(castings and wrong definition of argv in main)
+
+2002-12-12  Rodrigo Moya <rodrigo@gnome-db.org>
+
+	* itools.scm:
+	* itools.desktop: removed obsolete stuff.
+
+2002-12-11  Rodrigo Moya <rodrigo@gnome-db.org>
+
+	* gnome-remote-shell.c (dialog_button_clicked_cb): display error
+	message if there was any error when spawning the child processes.
+
+2002-12-09  Rodrigo Moya <rodrigo@gnome-db.org>
+
+	* gnome-remote-shell.c (main): added gettext initialization.
+
+	* Makefile.am: pass GNOMELOCALEDIR on compilation line.
+
+2002-12-08  Rodrigo Moya <rodrigo@gnome-db.org>
+
+	* gnome-remote-shell.c (main): set default button on dialog.
+	(create_dialog_contents): added a nice pixmap to the dialog.
+
+2002-12-07  Rodrigo Moya <rodrigo@gnome-db.org>
+
+	* gnome-remote-shell.c (create_dialog_contents): added widgets for
+	setting the terminal window's geomatry.
+
+2002-12-06  Rodrigo Moya <rodrigo@gnome-db.org>
+
+	* gnome-remote-shell.c (dialog_response_cb): display host name in
+	GNOME Terminal's title and made it not display the menu bar. Also,
+	take into account port entry for SSH.
+	(create_dialog_contents): connect to "toggled" signal on radio
+	buttons.
+	(radio_button_toggled_cb): enable/disable fields depending on the
+	selected method.
+
+1998-07-23  Nuno Ferreira  <nmrf@rnl.ist.utl.pt>
+
+	* itools.desktop: Added Portuguese translation.
+
+Tue Jan 27 13:57:26 1998  Federico Mena  <federico@bananoid.nuclecu.unam.mx>
+
+	* Makefile.am (install-data-local): Updated installation of the
+	.desktop files.
+
+Sun Oct 26 10:56:08 1997  Tom Tromey  <tromey@cygnus.com>
+
+	* itools.scm (create-host-lookup-panel): Run gettext at run time,
+	not load time.
+	(create-whois-panel): Likewise.
+
+Sat Oct 25 21:50:15 1997  Tom Tromey  <tromey@cygnus.com>
+
+	* Makefile.am (install-data-local): Use INSTALL_DATA, not cp.
+

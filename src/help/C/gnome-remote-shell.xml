@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+"http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+  <!ENTITY legal SYSTEM "legal.xml">
+  <!ENTITY appversion "1.99.44">
+  <!ENTITY manrevision "1.0">
+  <!ENTITY date "November 2003">
+  <!ENTITY app "<application>Remote Shell</application>">
+  <!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.GNOME.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Jan 30, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="en">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>&app; Manual V&manrevision;</title>       
+     <copyright>
+        <year>2003</year>
+	<holder>Emil Soleyman-Zomalan</holder> 
+    </copyright>
+
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher> 
+      <publishername> GNOME Documentation Project </publishername> 
+    </publisher> 
+
+   &legal; <!-- This file contains link to license for the
+   documentation (GNU FDL), and other legal stuff such as "NO
+   WARRANTY" statement. Please do not change any of this. -->
+
+    <authorgroup> 
+       <author> 
+         <firstname>Emil</firstname>
+	 <surname>Soleyman-Zomalan</surname>
+         <affiliation> 
+	   <orgname>GNOME Documentation Project</orgname>
+	   <address> <email>emil@nishra.com</email> </address>
+        </affiliation>
+      </author>
+    </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+         <revhistory>
+<!-- Remember to remove the &manrevision; entity from the revision entries other than the current revision. -->
+                <revision>
+                  <revnumber>&app; Manual V&manrevision;</revnumber>
+                  <date>&date;</date>
+                  <revdescription>
+	         	 <para role="author">Emil Soleyman-Zomalan</para>                         
+                         <para role="publisher">GNOME Documentation Project</para>
+                  </revdescription>
+                </revision>
+         </revhistory>
+
+    <releaseinfo> This manual describes version &appversion; of &app;.
+    </releaseinfo> 
+    <legalnotice> 
+        <title>Feedback</title>
+        <para>To report a bug or make a suggestion regarding the &app; application or this manual, follow the directions in the
+        <ulink url="ghelp:gnome-feedback" type="help">GNOME Feedback Page</ulink>.
+      </para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo> 
+  <indexterm zone="index"> 
+    <primary>Gnome Remote Shell</primary> 
+  </indexterm> 
+  <indexterm zone="index"> 
+    <primary>gnome-remote-shell</primary> 
+  </indexterm>
+  <indexterm zone="index"> 
+    <primary>Remote</primary> 
+  </indexterm>
+  <indexterm zone="gnome-remote-shell-when-start"> 
+    <primary>Connect to remote host</primary> 
+    <secondary>SSH</secondary>
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+<sect1 id="gnome-remote-shell-intro"> 
+    <title>Introduction</title> 
+    <para>You can use the &app; application to connect to a remote host through the use of ssh or telnet.
+    </para>
+    <para> 
+      &app; provides only a graphical interface, and relies on command-line utilities such as <command>ssh</command> and <command>telnet</command> for remote host connections.
+    </para>
+      
+</sect1>
+
+<!-- ============= Getting Started =========================== -->
+<sect1 id="gnome-remote-shell-get-start">
+         <title>Getting Started</title>
+           <para>This section provides information on how to start &app;, and describes the &app; user interface.
+           </para>
+
+<!-- ============= To Start Gnome Remote Shell ============================ -->
+         <sect2 id="gnome-remote-shell-to-start">
+                <title>To Start &app;</title>
+                <para>You can start <application>&app;</application> in the following ways:</para>
+                <variablelist>
+                <varlistentry>
+                <term><guimenu>Applications</guimenu> menu</term>
+                <listitem>
+                <para>Choose <menuchoice><guisubmenu>Internet</guisubmenu><guimenuitem>Remote Shell</guimenuitem></menuchoice>. </para>
+                </listitem>
+                </varlistentry>
+                <varlistentry>
+                <term>Command line</term>
+                <listitem>
+                <para>Type <command>gnome-remote-shell</command>, then press <keycap>Return</keycap>.</para>
+                </listitem>
+                </varlistentry>
+                </variablelist>
+        </sect2>
+
+        <sect2 id="gnome-remote-shell-when-start">
+                <title>When You Start &app;</title>
+                <para>When you start <application>&app;</application>, the following window is displayed:</para>
+
+                <figure id="gnome-remote-shell-FIG-window">
+                  <title>&app; Window</title>
+                  <screenshot>
+                         <mediaobject>
+                                <imageobject>
+                                <imagedata fileref="figures/gnome-remote-shell_window.png" format="PNG"/>
+                                         </imageobject>
+                                <textobject> <phrase>Shows Remote Shell main window.</phrase>
+                                </textobject>
+                        </mediaobject>
+                  </screenshot>
+                </figure>
+
+                <para>The <application>&app;</application> window contains the following elements: </para>
+                <variablelist>
+                  <varlistentry> <term>Connection to remote host</term>
+                         <listitem>
+                                 <para>The connection area contains input fields required for a successful remote login. By default, the <guilabel>Host</guilabel> and <guilabel>User</guilabel> fields are empty and the <guilabel>Port</guilabel> field is set to the default value of 22 for or 23 for telnet. The <guilabel>Host</guilabel> and <guilabel>User</guilabel> remember previously entered values and they can be accessed via the drop-down arrow for faster access.</para>
+                                 <para>The <guilabel>Port</guilabel> value can be changed from its default assignment by unchecking <guilabel>Use default</guilabel> box and entering your own value.</para>
+                         </listitem>
+                  </varlistentry>
+                  <varlistentry> <term>Method</term>
+                         <listitem>
+                                <para>The method area enables you to choose to connect to a remote host through either <guilabel>Secure shell (SSH)</guilabel> or <guilabel>Regular shell (Telnet)</guilabel>. Changing the connection method will automatically change the default port assignment in the <guimenuitem>Connect to remote host</guimenuitem> area.</para>
+                         </listitem>
+                  </varlistentry>
+                  <varlistentry> <term>Window size</term>
+                         <listitem>
+                                <para>The window size are enables you to change the dimensions of the terminal emulation application to your specifications. &app; will display the remote connection in that window.</para>
+                         </listitem>
+		  </varlistentry>
+		</variablelist>	 
+         </sect2>
+</sect1>
+
+</article>

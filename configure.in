@@ -1,0 +1,129 @@
+AC_PREREQ(2.52)
+AC_INIT(src/gnome-remote-shell.c)
+
+dnl Useful to call aclocal after 'make'
+AC_SUBST(ACLOCAL_AMFLAGS, "$ACLOCAL_FLAGS")
+
+AM_CONFIG_HEADER(config.h)
+AM_INIT_AUTOMAKE(gnome-remote-shell, 0.8.0)
+AM_MAINTAINER_MODE
+
+AC_PROG_INTLTOOL([0.11])
+
+GNOME_PLATFORM_GNOME_2(yes, force)
+
+AC_ISC_POSIX
+AC_PROG_CC
+AC_STDC_HEADERS
+dnl AC_ARG_PROGRAM
+AM_PROG_LIBTOOL
+
+GNOME_COMPILE_WARNINGS(yes)
+CFLAGS="$CFLAGS $WARN_CFLAGS"
+
+PKG_CHECK_MODULES(GNETWORK, libgnomeui-2.0 libgnome-2.0 gtk+-2.0 glib-2.0 libglade-2.0 gconf-2.0)
+AC_SUBST(GNETWORK_CFLAGS)
+AC_SUBST(GNETWORK_LIBS)
+
+dnl
+dnl Checks libraries
+dnl
+
+dnl Find vncviewer.
+dnl
+AC_ARG_WITH(vncviewer, [  --with-vncviewer=PATH   Which VNC viewer program to use.])
+if test "x$with_vncviewer" = "x" ; then
+	AC_PATH_PROG(VNCVIEWER_PROGRAM,
+		xvncviewer,,
+		$PATH:/usr/bin:/usr/local/bin)
+	if test "x$VNCVIEWER_PROGRAM" != "x" ; then
+		AC_DEFINE_UNQUOTED(VNCVIEWER_PROGRAM, "$VNCVIEWER_PROGRAM", [The vncviewer program])
+	else
+		AC_PATH_PROG(VNCVIEWER_PROGRAM,
+			vncviewer,,
+			$PATH:/usr/bin:/usr/local/bin)
+		if test "x$VNCVIEWER_PROGRAM" != "x" ; then
+			AC_DEFINE_UNQUOTED(VNCVIEWER_PROGRAM, "$VNCVIEWER_PROGRAM", [The vncviewer program])
+		fi
+	fi
+else
+	AC_DEFINE_UNQUOTED(VNCVIEWER_PROGRAM, "$with_vncviewer", [The vncviewer program])
+fi
+AM_CONDITIONAL(HAVE_VNCVIEWER, test "x$VNCVIEWER_PROGRAM" != "x")
+
+dnl Find Xnest
+dnl
+AC_ARG_WITH(xnest, [  --with-xnest=PATH       Where Xnest is.])
+if test "x$with_xnest" = "x" ; then
+	AC_PATH_PROG(XNEST_PROGRAM,
+		Xnest,,
+		$PATH:/usr/bin:/usr/local/bin)
+	if test "x$XNEST_PROGRAM" != "x" ; then
+		AC_DEFINE_UNQUOTED(XNEST_PROGRAM, "$XNEST_PROGRAM", [The Xnest program])
+	fi
+else
+	AC_DEFINE_UNQUOTED(XNEST_PROGRAM, "$with_xnest", [The Xnest program])
+fi
+AM_CONDITIONAL(HAVE_XNEST, test "x$XNEST_PROGRAM" != "x")
+
+AC_ARG_ENABLE(rdclient, AC_HELP_STRING([--disable-rdclient],
+		[Build the Remote Desktop Client module (default: enabled)]))
+if test "x$enable_rdclient" = "xno"; then
+	echo "Not building the Remote Desktop Client module"
+else
+	enable_rdclient=yes
+	echo "Building the Remote Desktop Client module"
+fi
+AM_CONDITIONAL(WITH_RDCLIENT, test "x$enable_rdclient" = "xyes")
+
+dnl Check gconftool
+dnl
+AC_PATH_PROG(GCONFTOOL, gconftool-2, no)
+if test x"$GCONFTOOL" = xno; then
+  AC_MSG_ERROR([gconftool-2 executable not found in your path - should be installed with GConf])
+fi
+AM_GCONF_SOURCE_2
+
+dnl
+dnl Translations
+dnl
+GETTEXT_PACKAGE=gnome-remote-shell
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[The gettext package])
+ALL_LINGUAS="az ca cs da de el en_CA en_GB es fr ga gl he hr hu it ja ko ms nl no pl pt pt_BR ru sq sr sr@Latn sv tr uk vi wa zh_CN zh_TW"
+AM_GLIB_GNU_GETTEXT
+
+AC_SUBST(CFLAGS)
+AC_SUBST(CPPFLAGS)
+AC_SUBST(LDFLAGS)
+
+if test "x${prefix}" = "xNONE"; then
+   AC_DEFINE_UNQUOTED(GNOME_ICONDIR, "${ac_default_prefix}/share/pixmaps", [Pixmap directory])
+else
+   AC_DEFINE_UNQUOTED(GNOME_ICONDIR, "${prefix}/share/pixmaps", [Pixmap directory])
+fi 
+
+dnl
+dnl Debugging flags
+dnl
+set_debug=no
+AC_ARG_ENABLE(debug,
+[  --enable-debug       Lots of noisy debug messages],
+set_debug="$enableval")
+
+AC_MSG_CHECKING(if debug messages are enabled)
+if test "$set_debug" != "no"; then
+        AC_MSG_RESULT(yes)
+        CFLAGS="-DGRD_DEBUG $CFLAGS"
+else
+        AC_MSG_RESULT(no)
+fi
+
+AC_OUTPUT([
+Makefile
+gnome-network.spec
+po/Makefile.in
+src/Makefile
+src/help/Makefile
+src/help/C/Makefile
+])

@@ -1,0 +1,2239 @@
+# Catalan translation of gnome-network by Softcatalà
+# Copyright (C) 2004 Free Software Foundation
+# This file is distributed under the same license as the gnome-network package.
+#
+# Ivan Vilata i Balaguer <al011097@alumail.uji.es>, 2000
+# Softcatala <linux@softcatala.org>, 2000.
+# Xavier A. Conde Rueda <xaviconde@eresmas.com>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-network\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-02-05 14:38+0100\n"
+"PO-Revision-Date: 2004-02-05 14:43+0100\n"
+"Last-Translator: Xavier Conde Rueda <xaviconde@eresmas.com>\n"
+"Language-Team: Catalan <tradgnome@softcatala.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: desktop/client/applet/applet.c:67 desktop/client/applet/applet.c:128
+msgid "GNOME Remote Desktop Applet"
+msgstr "Miniaplicació d'escriptori remot del GNOME"
+
+#: desktop/client/gnome-remote-desktop.desktop.in.h:1
+msgid "Connect to a remote desktop computer"
+msgstr "Connecteu-vos a l'escriptori d'un ordinador remot"
+
+#: desktop/client/gnome-remote-desktop.desktop.in.h:2
+msgid "Remote Desktop Client"
+msgstr "Client d'escriptori remot"
+
+#: desktop/client/src/connect.c:75
+msgid "640 x 480 pixels"
+msgstr "640 x 480 píxels"
+
+#: desktop/client/src/connect.c:75
+msgid "800 x 600 pixels"
+msgstr "800 x 600 píxels"
+
+#: desktop/client/src/connect.c:76
+msgid "1024 x 768 pixels"
+msgstr "1024 x 768 píxels"
+
+#: desktop/client/src/connect.c:77
+msgid "1152 x 864 pixels"
+msgstr "1152 x 864 píxels"
+
+#: desktop/client/src/connect.c:78
+msgid "1280 x 960 pixels"
+msgstr "1280 x 960 píxels"
+
+#: desktop/client/src/connect.c:82
+msgid "256 Colors"
+msgstr "256 colors"
+
+#: desktop/client/src/connect.c:83
+msgid "High Color (15 bit)"
+msgstr "Alt color (15 bits)"
+
+#: desktop/client/src/connect.c:84
+msgid "High Color (16 bit)"
+msgstr "Alt color (16 bits)"
+
+#: desktop/client/src/connect.c:85
+msgid "True Color (24 bit)"
+msgstr "Color real (24 bits)"
+
+#: desktop/client/src/connect.c:286 desktop/client/src/connect.c:309
+#: desktop/client/src/connect.c:311 desktop/client/src/support.c:780
+#: desktop/gnome-remote-desktop.glade.h:13
+msgid "GNOME Remote Desktop"
+msgstr "Escriptori remot del GNOME"
+
+#.
+#. This is the input for the Compact mode
+#.
+#: desktop/client/src/connect.c:343 desktop/client/src/connect.c:554
+msgid "Compu_ter:"
+msgstr "_Ordinador:"
+
+#: desktop/client/src/connect.c:367 desktop/client/src/connect.c:622
+msgid "Enter the name or address of the remote system."
+msgstr "Introduïu el nom o l'adreça del sistema remot."
+
+#: desktop/client/src/connect.c:372 desktop/client/src/connect.c:629
+msgid "Select the protocol to use for this connection."
+msgstr "Seleccioneu el protocol que s'usarà amb aquesta connexió."
+
+#: desktop/client/src/connect.c:379 desktop/client/src/connect.c:636
+msgid ""
+"RDP protocol is used to connect to Microsoft Terminal Servers and Windows XP "
+"systems with desktop sharing."
+msgstr ""
+"El protocol RDP s'usa per connectar sistemes Windows XP i Microsoft Terminal "
+"Servers per compartir l'escriptori."
+
+#: desktop/client/src/connect.c:384 desktop/client/src/connect.c:643
+msgid ""
+"VNC protocol is used to connect to systems sharing the desktop by using VNC."
+msgstr ""
+"El protocol VNC s'usa per connectar sistemes que comparteixin l'escriptori "
+"fent servir VNC."
+
+#: desktop/client/src/connect.c:393 desktop/client/src/connect.c:654
+msgid "XDMCP protocol uses Xnest to connect to servers running X."
+msgstr ""
+"El protocol XDMCP usa l'Xnest per connectar servidors que executin l'X."
+
+#: desktop/client/src/connect.c:398 desktop/client/src/connect.c:661
+msgid "ICA protocol is used to connect to Citrix servers."
+msgstr "El protocol ICA s'usa per connectar amb servidors Citrix."
+
+#.
+#. This is the Profile Launcher
+#.
+#: desktop/client/src/connect.c:409
+msgid "Prof_ile Launcher:"
+msgstr "Executador de perf_ils:"
+
+#: desktop/client/src/connect.c:422
+msgid "Select a saved profile to launch it immediately."
+msgstr "Seleccioneu un perfil per executar-lo."
+
+#: desktop/client/src/connect.c:454
+msgid "_More"
+msgstr "_Més"
+
+#: desktop/client/src/connect.c:480 desktop/client/src/connect.c:1224
+#: network-utilities/gnome-remote-shell.glade.h:6
+msgid "Co_nnect"
+msgstr "Co_nnecta"
+
+#.
+#. This is the label for the Connection Profile
+#.
+#: desktop/client/src/connect.c:489 desktop/client/src/connect.c:491
+msgid "Connection Profile"
+msgstr "Perfil de connexió"
+
+#: desktop/client/src/connect.c:520 desktop/client/src/connect.c:522
+msgid "Logon Settings"
+msgstr "Configuració de l'entrada"
+
+#: desktop/client/src/connect.c:530
+msgid ""
+"Type the name of the computer or choose a computer from the drop-down list."
+msgstr ""
+"Escriviu el nom de l'ordinador o escolliu un ordinador de la llista "
+"desplegable."
+
+#: desktop/client/src/connect.c:562
+msgid "Pro_tocol:"
+msgstr "Pro_tocol:"
+
+#: desktop/client/src/connect.c:570
+msgid "_User Name:"
+msgstr "Nom d'_usuari:"
+
+#: desktop/client/src/connect.c:578
+msgid "Pass_word:"
+msgstr "Contra_senya:"
+
+#: desktop/client/src/connect.c:586
+msgid "Do_main:"
+msgstr "Do_mini:"
+
+#: desktop/client/src/connect.c:594
+msgid "C_lient Hostname:"
+msgstr "Nom de_l client remot:"
+
+#: desktop/client/src/connect.c:602
+msgid "Prot_ocol File:"
+msgstr "Fitxer de pr_otocol:"
+
+#: desktop/client/src/connect.c:677
+msgid ""
+"Enter the username for the remote system.\n"
+"For VNC, enter the path to your saved vnc password file."
+msgstr ""
+"Introduïu el nom d'usuari per al sistema remot.\n"
+"Per a un VNC, introduïu el camí al vostre fitxer de contrasenya vnc."
+
+#: desktop/client/src/connect.c:686
+msgid "Enter the password for the remote system."
+msgstr "Introduïu la contrasenya per al sistema remot."
+
+#: desktop/client/src/connect.c:694
+msgid "Enter the domain for the remote system."
+msgstr "Introduïu el domini per al sistema remot."
+
+#: desktop/client/src/connect.c:702
+msgid "Enter the local hostname for this system."
+msgstr "Introduïu el nom de màquina local d'aquest sistema."
+
+#: desktop/client/src/connect.c:714
+msgid ""
+"Some protocols require a file containing settings. If required, enter the "
+"path to the file here."
+msgstr ""
+"Alguns protocols necessiten un fitxer amb la seva configuració. Introduïu el "
+"camí al fitxer aquí, en cas que sigui necessari."
+
+#: desktop/client/src/connect.c:736 desktop/client/src/connect.c:738
+msgid "Remote Desktop Size"
+msgstr "Mida de l'escriptori remot"
+
+#: desktop/client/src/connect.c:756
+msgid "Use default screen size"
+msgstr "Usa la mida de pantalla predeterminada"
+
+#: desktop/client/src/connect.c:760
+msgid "Use the default screen size."
+msgstr "Usa la mida de pantalla predeterminada."
+
+#: desktop/client/src/connect.c:765
+msgid "Use specified screen size"
+msgstr "Usa la mida de pantalla especificada"
+
+#: desktop/client/src/connect.c:769
+msgid "Use the list to choose the screen size to use."
+msgstr "Useu la llista per escollir la mida de pantalla."
+
+#: desktop/client/src/connect.c:781
+msgid "Operate in full screen mode"
+msgstr "Realitza les operacions en mode de pantalla completa"
+
+#: desktop/client/src/connect.c:785
+msgid "Work in full screen mode."
+msgstr "Treballa en mode de pantalla completa."
+
+#: desktop/client/src/connect.c:794
+msgid "Use alternate full screen switch (-F)"
+msgstr "Usa un commutador de pantalla completa alternatiu (-F)"
+
+#: desktop/client/src/connect.c:798
+msgid "Check this if you use rdesktop with the unified patches."
+msgstr "Habiliteu això si useu l'rdesktop amb els pedaços unificats."
+
+#: desktop/client/src/connect.c:807 desktop/client/src/connect.c:809
+msgid "Colors"
+msgstr "Colors"
+
+#: desktop/client/src/connect.c:827
+msgid "Use default color depth"
+msgstr "Usa la profunditat de color predeterminada"
+
+#: desktop/client/src/connect.c:831
+msgid "Use the default color depth."
+msgstr "Usa la profunditat de color predeterminada."
+
+#: desktop/client/src/connect.c:836
+msgid "Use specified color depth"
+msgstr "Usa la profunditat de color especificada"
+
+#: desktop/client/src/connect.c:840
+msgid "Use the list to choose the color depth to use."
+msgstr "Seleccioneu de la llista la profunditat de color que s'usarà."
+
+#: desktop/client/src/connect.c:864
+msgid "Remote Computer _Sound"
+msgstr "_So en l'ordinador remot"
+
+#: desktop/client/src/connect.c:866
+msgid "Remote Computer Sound"
+msgstr "So en l'ordinador remot"
+
+#: desktop/client/src/connect.c:890 desktop/client/src/connect.c:926
+msgid "On the local computer"
+msgstr "En l'ordinador local"
+
+#: desktop/client/src/connect.c:893 desktop/client/src/connect.c:929
+msgid "On the remote computer"
+msgstr "En l'ordinador remot"
+
+#: desktop/client/src/connect.c:896
+msgid "Do not play"
+msgstr "No reprodueixis"
+
+#: desktop/client/src/connect.c:907
+msgid "_Keyboard"
+msgstr "_Teclat"
+
+#: desktop/client/src/connect.c:909
+msgid "Keyboard"
+msgstr "Teclat"
+
+#: desktop/client/src/connect.c:932
+msgid "In full screen mode only"
+msgstr "En modalitat de pantalla completa"
+
+#: desktop/client/src/connect.c:938
+msgid ""
+"Use the following keyboard language\n"
+"(2 char keycode)"
+msgstr ""
+"Fes servir el següent idioma amb el teclat\n"
+"(un codi de 2 caràcters)"
+
+#: desktop/client/src/connect.c:966
+msgid ""
+"Apply Windows key combinations\n"
+"(for example ALT+TAB) (unsupported)"
+msgstr ""
+"Aplica les combinacions de les tecles Windows\n"
+"(per exemple tecla d'alternativa + tecla de tabulació) (no està implementat)"
+
+#: desktop/client/src/connect.c:989 desktop/client/src/connect.c:991
+msgid "Start a Program"
+msgstr "Inicia un programa"
+
+#: desktop/client/src/connect.c:1006
+msgid "Start the following program on connection"
+msgstr "Inicia el programa següent en connectar-se"
+
+#: desktop/client/src/connect.c:1013
+msgid "Program path and filename"
+msgstr "Camí al programa i el nom del fitxer"
+
+#: desktop/client/src/connect.c:1026
+msgid "Start in the following folder"
+msgstr "Inicia en l'ordre següent"
+
+#: desktop/client/src/connect.c:1048 desktop/client/src/connect.c:1050
+msgid "Optimize Performance"
+msgstr "Optimitza el rendiment"
+
+#: desktop/client/src/connect.c:1071
+msgid "Desktop background (u)"
+msgstr "Fons de pantalla (u)"
+
+#: desktop/client/src/connect.c:1075
+msgid "Show content of window while dragging (u)"
+msgstr "Mostra el contingut de la finestra quan s'arrossegui (u)"
+
+#: desktop/client/src/connect.c:1079
+msgid "Menu and window animation (u)"
+msgstr "Animació del menú i la finestra (u)"
+
+#: desktop/client/src/connect.c:1083
+msgid "Themes (u)"
+msgstr "Temes (u)"
+
+#: desktop/client/src/connect.c:1087
+msgid "Enable bitmap caching"
+msgstr "Habilita desar en caché els mapes de bits"
+
+#: desktop/client/src/connect.c:1091
+msgid "Do not send motion events"
+msgstr "No enviïs esdeveniments de moviment"
+
+#: desktop/client/src/connect.c:1095
+msgid "Enable window manager's key bindings"
+msgstr "Habilita les tecles vinculades del gestor de finestres"
+
+#: desktop/client/src/connect.c:1100
+msgid "Options available for optimizing performance"
+msgstr "Opcions disponibles per optimitzar el rendiment"
+
+#.
+#. These are the labels for the notebook control
+#.
+#: desktop/client/src/connect.c:1113
+msgid "_General"
+msgstr "_General"
+
+#: desktop/client/src/connect.c:1118
+msgid "_Display"
+msgstr "_Visualització"
+
+#: desktop/client/src/connect.c:1123
+msgid "Local _Resources"
+msgstr "_Recursos locals"
+
+#: desktop/client/src/connect.c:1128
+msgid "_Programs"
+msgstr "_Programes"
+
+#: desktop/client/src/connect.c:1133
+msgid "Perf_ormance"
+msgstr "Ren_diment"
+
+#: desktop/client/src/connect.c:1197
+msgid "_Less"
+msgstr "_Menys"
+
+#: desktop/client/src/connect.c:1708
+msgid "Input a filename to save as..."
+msgstr "Introduïu un nom de fitxer per anomenar i desar..."
+
+#: desktop/client/src/connect.c:1750 desktop/client/src/connect.c:1795
+msgid "Choose an RDP file to open..."
+msgstr "Escolliu un fitxer RDP per obrir..."
+
+#: desktop/client/src/support.c:277
+msgid ""
+"rdesktop was not found in your path.\n"
+"Please verify your rdesktop installation."
+msgstr ""
+"No s'ha trobat l'rdesktop.\n"
+"Verifiqueu la vostra instal·lació de l'rdesktop."
+
+#: desktop/client/src/support.c:417
+msgid ""
+"vncviewer or xvncviewer were\n"
+" not found in your path.\n"
+"Please verify your vnc installation."
+msgstr ""
+"No s'ha trobat l'vncviewer ni l'xvncviewer.\n"
+"Verifiqueu la vostra instal·lació del vnc."
+
+#: desktop/client/src/support.c:519
+msgid ""
+"Xnest was not found in your path.\n"
+"Please verify your Xnest installation."
+msgstr ""
+"No s'ha trobat l'Xnest.\n"
+"Verifiqueu la vostra instal·lació de l'Xnest."
+
+#: desktop/client/src/support.c:578
+msgid ""
+"wfica was not found in your path.\n"
+"Please verify your ICAClient installation."
+msgstr ""
+"No s'ha trobat l'wfica.\n"
+"Verifiqueu la vostra instal·lació de l'ICAClient."
+
+#: desktop/client/src/support.c:702
+msgid ""
+"Failed to spawn.\n"
+"Please verify your installation."
+msgstr ""
+
+#. create the widgets
+#: desktop/client/src/support.c:744
+msgid "GNOME Remote Desktop Error"
+msgstr "S'ha produït un error en l'escriptori remot GNOME"
+
+#: desktop/client/src/support.c:750 desktop/client/src/support.c:756
+msgid "An error has occurred."
+msgstr "S'ha produït un error."
+
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:1
+msgid "Check this to enable desktop sharing in GNOME"
+msgstr ""
+"Habiliteu aquesta opció per permetre compartir l'escriptori en el GNOME"
+
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:2
+msgid "Password to connect to desktop sharing"
+msgstr "Contrasenya per connectar-se a la compartició de l'escriptori"
+
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:3
+msgid ""
+"Set this to the password clients should use to connect to your desktop "
+"remotely"
+msgstr ""
+"Especifiqueu la contrasenya que els clients han de fer servir per connectar "
+"remòtament amb el vostre escriptori"
+
+#: desktop/data/gnome-desktop-sharing.schemas.in.h:4
+msgid "Whether to enable desktop sharing"
+msgstr "Si s'ha d'habilitar la compartició d'escriptori"
+
+#: desktop/gnome-remote-desktop.glade.h:1
+#: gnome-netinfo/gnome-netinfo.glade.h:1
+#: network-utilities/gnome-remote-shell.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: desktop/gnome-remote-desktop.glade.h:2
+#: gnome-netinfo/gnome-netinfo.glade.h:5
+#: network-utilities/gnome-remote-shell.glade.h:2
+#: sync/entryconfigdialog.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: desktop/gnome-remote-desktop.glade.h:3
+msgid ""
+"<b>Connection settings</b>\n"
+"Type the name of the computer to open a new desktop session and/or the "
+"display number to connect to an already running session."
+msgstr ""
+"<b>Configuració de la connexió</b>\n"
+"Escriviu el nom de l'ordinador per obrir una nova sessió d'escriptori i el "
+"nombre del port de visualització, per connectar-se a una sessió que s'està "
+"executant."
+
+#: desktop/gnome-remote-desktop.glade.h:5
+msgid ""
+"<b>Desktop settings</b>\n"
+"Select the size and color depth (not supported for all cases, so use with "
+"care) of you remote desktop."
+msgstr ""
+"<b>Configuració de l'escriptori</b>\n"
+"Seleccioneu la mida i la profunditat de color del vostre escriptori remot "
+"(no està disponible en tots els casos, per tant useu-lo amb compte)."
+
+#: desktop/gnome-remote-desktop.glade.h:7
+msgid ""
+"<b>Method</b>\n"
+"Select the method for connecting to the remote host. For Windows systems, "
+"you want to choose VNC. For UNIX systems, usually X11, though VNC will also "
+"work."
+msgstr ""
+"<b>Mètode</b>\n"
+"Seleccioneu el mètode per connectar-se a la màquina remota. Escolliu VNC per "
+"als sistemes Windows. Per als sistemes UNIX, normalment X11; el VNC també "
+"funcionarà."
+
+#: desktop/gnome-remote-desktop.glade.h:9
+msgid "Color depth"
+msgstr "Profunditat de color"
+
+#: desktop/gnome-remote-desktop.glade.h:10
+msgid "Connect Now ..."
+msgstr "Connecta ara..."
+
+#: desktop/gnome-remote-desktop.glade.h:11
+msgid "Display size"
+msgstr "Mida de la visualització"
+
+#: desktop/gnome-remote-desktop.glade.h:12
+msgid "Display:"
+msgstr "Visualització:"
+
+#: desktop/gnome-remote-desktop.glade.h:14
+msgid "Host:"
+msgstr "Màquina amfitriona:"
+
+#: desktop/gnome-remote-desktop.glade.h:15
+msgid "VNC"
+msgstr "VNC"
+
+#: desktop/gnome-remote-desktop.glade.h:16
+msgid "X11"
+msgstr "X11"
+
+#: desktop/gnome-remote-desktop.glade.h:17
+msgid "by"
+msgstr "per"
+
+#: desktop/preferences/interface.c:49 desktop/preferences/interface.c:64
+#: desktop/server/tray.c:167
+msgid "Desktop Sharing"
+msgstr "Compartició de l'escriptori"
+
+#: desktop/preferences/interface.c:73
+msgid "_Share my desktop with others"
+msgstr "Comparteix el meu e_scriptori amb altres"
+
+#: desktop/preferences/interface.c:79
+msgid "Enable this option to allow others to view your desktop"
+msgstr ""
+"Habiliteu aquesta opció per permetre que altres visualitzin el vostre "
+"escriptori."
+
+#: desktop/preferences/interface.c:94
+msgid ""
+"The following information will need to be supplied by the user connecting to "
+"your desktop"
+msgstr ""
+"L'usuari que es connecti al vostre escriptori haurà de proporcionar la "
+"informació següent"
+
+#: desktop/preferences/interface.c:105 gnome-ppp/account-window.c:1023
+msgid "Password"
+msgstr "Contrasenya"
+
+#: desktop/preferences/interface.c:123
+msgid "Automatically accept clients"
+msgstr "Accepta clients automàticament"
+
+#: desktop/preferences/support.c:60 desktop/preferences/support.c:85
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr "No s'ha trobat el fitxer de mapa de píxels: %s"
+
+#: desktop/server/eggtrayicon.c:118
+msgid "Orientation"
+msgstr "Orientació"
+
+#: desktop/server/eggtrayicon.c:119
+msgid "The orientation of the tray."
+msgstr "La orientació de la safata."
+
+#: desktop/server/tray.c:66 pws/pws.c:85
+msgid "/_Preferences"
+msgstr "/_Preferències"
+
+#: desktop/server/tray.c:67
+msgid "/_Clients"
+msgstr "/_Clients"
+
+#: desktop/server/tray.c:69
+msgid "/_About"
+msgstr "/_Quant a"
+
+#: desktop/server/tray.c:70 pws/pws.c:88
+msgid "/_Quit"
+msgstr "/_Surt"
+
+#: desktop/server/tray.c:122
+msgid "Your desktop is viewable to others"
+msgstr "Altres persones poden visualitzar el vostre escriptori"
+
+#: desktop/server/tray.c:169
+msgid "Remote Desktop Sharing"
+msgstr "Compartició d'escriptori remot"
+
+#: desktop/server/tray.c:172 gnome-netinfo/callbacks.c:214
+msgid "This is an untranslated version of GNOME Network Information"
+msgstr ""
+"Ivan Vilata i Balaguer <al011097@alumail.uji.es>, 2000\n"
+"Xavier Conde Rueda <xaviconde@eremas.com>, 2004"
+
+#: desktop/server/tray.c:407
+msgid "Clients currently viewing your desktop"
+msgstr "Clients que estan visualitzant el vostre escriptori"
+
+#: desktop/server/tray.c:429 gnome-ppp/dial-window.c:431
+msgid "Disconnect"
+msgstr "Desconnecta"
+
+#: gnome-netinfo/callbacks.c:212
+msgid "Graphical user interface for common network utilities"
+msgstr "Interfície gràfica d'usuari per a les utilitats típiques de xarxa"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:2
+msgid "(eg. user@www.domain.com)"
+msgstr "(p. e. usuari@www.domini.com)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:3
+msgid "(for example: domain.com)"
+msgstr "(per exemple: domini.com)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:4
+msgid "(for example: www.domain.com or 192.168.2.1)"
+msgstr "(per exemple: www.domini.com o 192.168.2.1)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:6
+msgid "0.0"
+msgstr "0.0"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:7
+msgid "<span weight=\"bold\">@</span>"
+msgstr "<span weight=\"bold\">@</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:8
+msgid ""
+"<span weight=\"bold\">Enter a domain address to lookup its \"whois\" "
+"information</span>"
+msgstr ""
+"<span weight=\"bold\">Introduïu un nom de domini per cercar la seva "
+"informació de \"whois\"</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:9
+msgid "<span weight=\"bold\">Enter a network address to lookup</span>"
+msgstr ""
+"<span weight=\"bold\">Introduïu una adreça de xarxa per fer una cerca</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:10
+msgid ""
+"<span weight=\"bold\">Enter a user name and network address to finger that "
+"user</span>"
+msgstr ""
+"<span weight=\"bold\">Introduïu un nom d'usuari i una contrasenya per cercar "
+"amb el finger</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:11
+msgid "<span weight=\"bold\">Enter the network address to ping</span>"
+msgstr ""
+"<span weight=\"bold\">Introduïu una adreça de xarxa per fer un ping</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:12
+msgid ""
+"<span weight=\"bold\">Enter the network address to scan for open ports</span>"
+msgstr ""
+"<span weight=\"bold\">Introduïu una adreça de xarxa per escanejar els ports "
+"oberts</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:13
+msgid ""
+"<span weight=\"bold\">Enter the network address to trace a route to</span>"
+msgstr ""
+"<span weight=\"bold\">Introduïu una adreça de xarxa per esbrinar la ruta que "
+"segueix</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:14
+msgid "<span weight=\"bold\">Information</span>"
+msgstr "<span weight=\"bold\">Informació</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:15
+msgid "<span weight=\"bold\">Round trip time statistics</span>"
+msgstr "<span weight=\"bold\">Estadístiques del temps d'anada i tornada</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:16
+msgid ""
+"<span weight=\"bold\">Select the network device to get information on</span>"
+msgstr ""
+"<span weight=\"bold\">Seleccioneu de quin dispositiu de xarxa s'obtindrà la "
+"informació</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:17
+msgid "<span weight=\"bold\">Select the type of information to display</span>"
+msgstr ""
+"<span weight=\"bold\">Seleccioneu el tipus d'informació que es visualitzarà</"
+"span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:18
+msgid "<span weight=\"bold\">Select the type of information to lookup:</span>"
+msgstr ""
+"<span weight=\"bold\">Seleccioneu el tipus d'informació que es cercarà:</"
+"span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:19
+msgid "<span weight=\"bold\">Statistics</span>"
+msgstr "<span weight=\"bold\">Estadístiques</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:20
+msgid "<span weight=\"bold\">Transmission statistics</span>"
+msgstr "<span weight=\"bold\">Estadístiques de la transmissió</span>"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:21
+msgid "Any / All Information"
+msgstr "Alguna / tota la informació"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:22
+msgid "Average:"
+msgstr "Mitjana:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:23
+msgid "Broadcast:"
+msgstr "Broadcast:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:24
+msgid "CPU / OS Type"
+msgstr "CPU / sistema operatiu"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:25
+msgid "Canonical Name"
+msgstr "Nom canònic"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:26
+msgid "Clear _History"
+msgstr "Neteja l'_historial"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:27
+msgid "Collisions:"
+msgstr "Col·lisions:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:28
+msgid "Default Information"
+msgstr "Informació predeterminada"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:29
+msgid "Display active network services"
+msgstr "Visualitza els serveis de xarxa actius"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:30
+msgid "Display multicast information"
+msgstr "Visualitza la informació multicast"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:31
+msgid "Display routing table information"
+msgstr "Visualitza la informació de la taula d'encaminament"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:32
+msgid "Enter the network address to ping"
+msgstr "Introduïu l'adreça de xarxa per fer-hi un ping"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:33 gnome-netinfo/main.c:530
+msgid "Finger"
+msgstr "Finger"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:34
+msgid "Hardware address:"
+msgstr "Adreça del maquinari:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:35
+msgid "Host name for Address"
+msgstr "Nom de màquina per a l'adreça"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:36
+msgid "IP address:"
+msgstr "Adreça IP:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:37
+msgid "Internet Address"
+msgstr "Adreça d'internet"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:38
+msgid "Link speed:"
+msgstr "Velocitat de l'enllaç:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:39 gnome-netinfo/main.c:485
+msgid "Lookup"
+msgstr "Cerca"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:40
+msgid "MTU:"
+msgstr "Unitat de transferència màxima (MTU):"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:41
+msgid "Mailbox Exchange"
+msgstr "Receptor de correu"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:42
+msgid "Mailbox Information"
+msgstr "Informació de la bústia de correu"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:43
+msgid "Maximum:"
+msgstr "Màxim:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:44
+msgid "Minimum:"
+msgstr "Mínim:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:45
+msgid "Multicast:"
+msgstr "Multicast:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:46
+msgid "Name Server"
+msgstr "Servidor de noms"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:47
+msgid "Netmask:"
+msgstr "Màscara de xarxa:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:48 gnome-netinfo/main.c:349
+msgid "Netstat"
+msgstr "Estat de la xarxa (netstat)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:49 gnome-netinfo/main.c:110
+msgid "Network Information"
+msgstr "Informació de xarxa"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:50
+msgid "Packets loss:"
+msgstr "Paquets perduts:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:51
+msgid "Packets received:"
+msgstr "Paquets rebuts:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:52
+msgid "Packets transmitted:"
+msgstr "Paquets transmessos:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:53 gnome-netinfo/main.c:257
+msgid "Ping"
+msgstr "Ping"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:54
+msgid "Port _Scan"
+msgstr "E_scaneig de ports"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:55
+msgid "Received bytes:"
+msgstr "Bytes rebuts:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:56
+msgid "Received packets:"
+msgstr "Paquets rebuts:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:57
+msgid "Reception errors:"
+msgstr "Errors en la recepció:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:58 gnome-netinfo/main.c:447
+msgid "Scan"
+msgstr "Escaneja"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:59
+msgid "Select network device from list"
+msgstr "Seleccioneu un dispositiu de xarxa de la llista"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:60
+msgid "Send only"
+msgstr "Envia només"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:61
+msgid "Send unlimited requests (pings)"
+msgstr "Envia un nombre il·limitat de peticions (pings)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:62
+msgid "Start-of-authority"
+msgstr "Inici d'autoritat (SOA)"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:63
+msgid "State:"
+msgstr "Estat:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:64
+msgid "Text Information"
+msgstr "Informació de text"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:65 gnome-netinfo/main.c:305
+msgid "Trace"
+msgstr "Segueix la ruta"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:66
+msgid "Transmission errors:"
+msgstr "Errors de transmissió:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:67
+msgid "Transmitted bytes:"
+msgstr "Bytes transmessos:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:68
+msgid "Transmitted packets:"
+msgstr "Paquets transmessos:"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:69
+msgid "Well Known Services"
+msgstr "Serveis ben coneguts"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:70 gnome-netinfo/main.c:581
+msgid "Whois"
+msgstr "Whois"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:71
+msgid "_Devices"
+msgstr "_Dispositius"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:72
+msgid "_Finger"
+msgstr "_Finger"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:73
+msgid "_Information"
+msgstr "_Informació"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:74
+msgid "_Lookup"
+msgstr "_Cerca"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:75
+msgid "_Netstat"
+msgstr "_Netstat"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:76
+msgid "_Ping"
+msgstr "_Ping"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:77
+msgid "_Traceroute"
+msgstr "_Traceroute"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:78
+msgid "_Whois"
+msgstr "_Whois"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:79
+msgid "ms"
+msgstr "ms"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:80 gnome-netinfo/info.h:27
+msgid "not available"
+msgstr "no està disponible"
+
+#: gnome-netinfo/gnome-netinfo.glade.h:81
+msgid "requests (pings)"
+msgstr "peticions (pings)"
+
+#: gnome-netinfo/info.c:277
+msgid "Active"
+msgstr "Actiu"
+
+#: gnome-netinfo/info.c:279
+msgid "Inactive"
+msgstr "Inactiu"
+
+#: gnome-netinfo/info.c:284
+msgid "Loopback"
+msgstr "Loopback"
+
+#: gnome-netinfo/info.c:297
+msgid "Enabled"
+msgstr "Habilitat"
+
+#: gnome-netinfo/info.c:299
+msgid "Disabled"
+msgstr "Inhabilitat"
+
+#. The info output in a text format (to copy on clipboard)
+#: gnome-netinfo/info.c:419
+#, c-format
+msgid "Network device:\t%s\n"
+msgstr "Dispositiu de xarxa:\t%s\n"
+
+#: gnome-netinfo/info.c:420
+#, c-format
+msgid "Hardware address:\t%s\n"
+msgstr "Adreça del maquinari:\t%s\n"
+
+#: gnome-netinfo/info.c:421
+#, c-format
+msgid "IP address:\t%s\n"
+msgstr "Adreça IP:\t%s\n"
+
+#: gnome-netinfo/info.c:422
+#, c-format
+msgid "Netmask:\t%s\n"
+msgstr "Màscara de xarxa:\t%s\n"
+
+#: gnome-netinfo/info.c:423
+#, c-format
+msgid "Broadcast:\t%s\n"
+msgstr "Broadcast:\t%s\n"
+
+#: gnome-netinfo/info.c:424
+#, c-format
+msgid "Multicast:\t%s\n"
+msgstr "Multicast:\t%s\n"
+
+#: gnome-netinfo/info.c:425
+#, c-format
+msgid "MTU:\t%s\n"
+msgstr "Unitat de transferència màxima: \t%s\n"
+
+#: gnome-netinfo/info.c:426
+#, c-format
+msgid "Link speed:\t%s\n"
+msgstr "Velocitat de l'enllaç:\t%s\n"
+
+#: gnome-netinfo/info.c:427
+#, c-format
+msgid "State:\t%s\n"
+msgstr "Estat:\t%s\n"
+
+#: gnome-netinfo/info.c:429
+#, c-format
+msgid "Transmitted packets:\t%s\n"
+msgstr "Paquets transmessos:\t%s\n"
+
+#: gnome-netinfo/info.c:430
+#, c-format
+msgid "Transmission errors:\t%s\n"
+msgstr "Errors de transmissió:\t%s\n"
+
+#: gnome-netinfo/info.c:431
+#, c-format
+msgid "Received packets:\t%s\n"
+msgstr "Paquets rebuts:\t%s\n"
+
+#: gnome-netinfo/info.c:432
+#, c-format
+msgid "Reception errors:\t%s\n"
+msgstr "Errors de recepció:\t%s\n"
+
+#: gnome-netinfo/info.c:433
+#, c-format
+msgid "Collisions:\t%s\n"
+msgstr "Col·lisions:\t%s\n"
+
+#. adds columns
+#: gnome-netinfo/lookup.c:272 sync/entrylist.c:67
+msgid "Name"
+msgstr "Nom"
+
+#: gnome-netinfo/lookup.c:280
+msgid "TTL"
+msgstr "Temps de vida"
+
+#: gnome-netinfo/lookup.c:289
+msgid "Address Type"
+msgstr "Tipus d'adreça"
+
+#: gnome-netinfo/lookup.c:299
+msgid "Record Type"
+msgstr "Tipus de registre"
+
+#: gnome-netinfo/lookup.c:308
+msgid "Address"
+msgstr "Adreça"
+
+#. The lookup output in text format:
+#. Source of query (hostname/ip address),
+#. Time To Live (TTL), Address Type,
+#. Record Type (A, PTR, HINFO, NS, TXT, etc.),
+#. Resolution (results of the query)
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/lookup.c:336
+msgid "Source\tTTL\tAddress Type\tRecord Type1\tResolution\n"
+msgstr "Origen\tTemps de vida\tTipus d'adreça\tTipus de registre\tResultat\n"
+
+#: gnome-netinfo/main.c:75
+msgid "Load information for a network device"
+msgstr "Carrega informació per a un dispositiu de xarxa"
+
+#: gnome-netinfo/main.c:76
+msgid "DEVICE"
+msgstr "Dispositiu"
+
+#: gnome-netinfo/main.c:78
+msgid "Send a ping to a network address"
+msgstr "Envia un ping a una adreça de xarxa"
+
+#: gnome-netinfo/main.c:79 gnome-netinfo/main.c:85 gnome-netinfo/main.c:88
+#: gnome-netinfo/main.c:91
+msgid "HOST"
+msgstr "Màquina"
+
+#: gnome-netinfo/main.c:81
+msgid "Get netstat information.  Valid options are: route, active, multicast."
+msgstr ""
+"Obté la informació d'estat de xarxa. Les opcions vàlides són: ruta, actiu, "
+"multicast."
+
+#: gnome-netinfo/main.c:82
+msgid "COMMAND"
+msgstr "Ordre"
+
+#: gnome-netinfo/main.c:84
+msgid "Trace a route to a network address"
+msgstr "Segueix la ruta establerta cap a una adreça de xarxa"
+
+#: gnome-netinfo/main.c:87
+msgid "Port scan a network address"
+msgstr "Escaneja els ports d'una adreça de xarxa"
+
+#: gnome-netinfo/main.c:90
+msgid "Look up a network address"
+msgstr "Fes una cerca en una adreça de xarxa"
+
+#: gnome-netinfo/main.c:93
+msgid "Finger command to run"
+msgstr "Ordre del finger que s'executarà"
+
+#: gnome-netinfo/main.c:94
+msgid "USER"
+msgstr "Usuari/a"
+
+#: gnome-netinfo/main.c:96
+msgid "Perform a whois lookup for a network domain"
+msgstr "Realitza una cerca whois per a un domini de xarxa"
+
+#: gnome-netinfo/main.c:97
+msgid "DOMAIN"
+msgstr "Domini"
+
+#: gnome-netinfo/main.c:116
+#, c-format
+msgid ""
+"The file %s doesn't exist, please check if gnome-netinfo is correcly "
+"installed"
+msgstr ""
+"No existeix el fitxer %s. Comproveu que gnome-netinfo està instal·lat "
+"correctament"
+
+#: gnome-netinfo/netinfo.c:157
+msgid "Network address not specified"
+msgstr "No s'ha especificat l'adreça de xarxa"
+
+#: gnome-netinfo/netinfo.c:165
+#, c-format
+msgid "The host '%s' cannot be found"
+msgstr "No s'ha trobat la màquina '%s'"
+
+#: gnome-netinfo/netinfo.c:309
+msgid "Information not available"
+msgstr "La informació no està disponible"
+
+#: gnome-netinfo/netinfo.c:395
+msgid "Stop"
+msgstr "Atura"
+
+#: gnome-netinfo/netinfo.c:401
+msgid "Run"
+msgstr "Executa"
+
+#: gnome-netinfo/netstat.c:403
+msgid "Protocol"
+msgstr "Protocol"
+
+#: gnome-netinfo/netstat.c:410
+msgid "IP Source"
+msgstr "Origen IP"
+
+#: gnome-netinfo/netstat.c:418
+msgid "Port/Service"
+msgstr "Port/servei"
+
+#: gnome-netinfo/netstat.c:426 gnome-netinfo/scan.c:289
+msgid "State"
+msgstr "Estat"
+
+#: gnome-netinfo/netstat.c:549
+msgid "Destination/Prefix"
+msgstr "Destí/prefix"
+
+#: gnome-netinfo/netstat.c:551
+msgid "Destination"
+msgstr "Destí"
+
+#: gnome-netinfo/netstat.c:558
+msgid "Gateway"
+msgstr "Pasarel·la"
+
+#. netmask
+#: gnome-netinfo/netstat.c:566 gnome-ppp/account-window.c:1106
+msgid "Netmask"
+msgstr "Màscara de xarxa"
+
+#: gnome-netinfo/netstat.c:574 gnome-netinfo/netstat.c:680
+msgid "Interface"
+msgstr "Interfície"
+
+#: gnome-netinfo/netstat.c:687
+msgid "Member"
+msgstr "Membre"
+
+#: gnome-netinfo/netstat.c:695
+msgid "Group"
+msgstr "Grup"
+
+#. The netstat "Display active network services" output in
+#. text format.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/netstat.c:737
+msgid "Protocol\tIP Source\tPort/Service\tState\n"
+msgstr "Protocol\tOrigen IP\tPort/servei\tEstat\n"
+
+#. The netstat "Display routing" output in text format.
+#. This seems as a route table.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/netstat.c:743
+msgid "Destination\tGateway\tNetmask\tInterface\n"
+msgstr "Destí\tPasarel·la\tMàscara de xarxa\tInterfície\n"
+
+#. The netstat "Multicast information" output in text format.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/netstat.c:748
+msgid "Interface\tMember\tGroup\n"
+msgstr "Interfície\tMembre\tGrup\n"
+
+#: gnome-netinfo/ping.c:378
+msgid "Bytes"
+msgstr "Bytes"
+
+#: gnome-netinfo/ping.c:385
+msgid "Source"
+msgstr "Origen"
+
+#: gnome-netinfo/ping.c:393
+msgid "Seq"
+msgstr "Seqüència"
+
+#: gnome-netinfo/ping.c:403
+msgid "Time"
+msgstr "Temps"
+
+#: gnome-netinfo/ping.c:411
+msgid "Units"
+msgstr "Unitats"
+
+#. The ping output in text format:
+#. Bytes received, Address Source, Number of Sequence,
+#. Round Trip Time (Time), Units of Time.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/ping.c:437
+msgid "Bytes\tSource\tSeq\tTime\tUnits\n"
+msgstr "Bytes\tOrigen\tSeqüència\tTemps\tUnitats\n"
+
+#. The ping output in a text format (to copy on clipboard)
+#: gnome-netinfo/ping.c:452
+#, c-format
+msgid "Time minimum:\t%s ms\n"
+msgstr "Temps mínim:\t%s ms\n"
+
+#: gnome-netinfo/ping.c:453
+#, c-format
+msgid "Time average:\t%s ms\n"
+msgstr "Temps mitjà:\t%s ms\n"
+
+#: gnome-netinfo/ping.c:454
+#, c-format
+msgid "Time maximum:\t%s ms\n"
+msgstr "Temps màxim:\t%s ms\n"
+
+#: gnome-netinfo/ping.c:456
+#, c-format
+msgid "Packets transmitted:\t%s\n"
+msgstr "Paquets transmessos:\t%s\n"
+
+#: gnome-netinfo/ping.c:458
+#, c-format
+msgid "Packets received:\t%s\n"
+msgstr "Paquets rebuts:\t%s\n"
+
+#: gnome-netinfo/ping.c:460
+#, c-format
+msgid "Packet loss:\t%s\n"
+msgstr "Paquets perduts:\t%s\n"
+
+#: gnome-netinfo/scan.c:151
+msgid "unknown"
+msgstr "desconegut"
+
+#: gnome-netinfo/scan.c:281
+msgid "Port"
+msgstr "Port"
+
+#: gnome-netinfo/scan.c:297
+msgid "Service"
+msgstr "Servei"
+
+#. The portscan output in text format:
+#. Port, State, Service.
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/scan.c:319
+msgid "Port\tState\tService\n"
+msgstr "Port\tEstat\tServei\n"
+
+#: gnome-netinfo/traceroute.c:260
+msgid "Hop"
+msgstr "Salt"
+
+#: gnome-netinfo/traceroute.c:268
+msgid "Hostname"
+msgstr "Nom de màquina"
+
+#: gnome-netinfo/traceroute.c:276
+msgid "IP"
+msgstr "IP"
+
+#: gnome-netinfo/traceroute.c:287
+msgid "Time 1"
+msgstr "Temps 1"
+
+#: gnome-netinfo/traceroute.c:297
+msgid "Time 2"
+msgstr "Temps 2"
+
+#. The traceroute output in text format:
+#. Hop count, Hostname, IP, Round Trip Time 1 (Time1),
+#. Round Trip Time 2 (Time2),
+#. It's a tabular output, and these belongs to the column titles
+#: gnome-netinfo/traceroute.c:323
+msgid "Hop\tHostname\tIP\tTime 1\tTime 2\n"
+msgstr "Salt\tNom de màquina\tIP\tTemps 1\tTemps 2\n"
+
+#: gnome-netinfo/utils.c:227
+#, c-format
+msgid "%s: Command not found"
+msgstr "%s: no s'ha trobat l'ordre"
+
+#: gnome-ppp/account-window.c:161
+msgid "Receive"
+msgstr "Rep"
+
+#: gnome-ppp/account-window.c:162
+msgid "Enter search string"
+msgstr "Introduïu la cadena de text per cercar"
+
+#: gnome-ppp/account-window.c:165
+msgid "Send"
+msgstr "Envia"
+
+#: gnome-ppp/account-window.c:166
+msgid "Enter transmission string"
+msgstr "Introduïu la cadena de text de transmissió"
+
+#: gnome-ppp/account-window.c:169
+msgid "Send User Name"
+msgstr "Envia el nom d'usuari/a"
+
+#: gnome-ppp/account-window.c:170
+msgid "Username taken from Authentication"
+msgstr "El nom d'usuari s'agafa de l'autenticació"
+
+#: gnome-ppp/account-window.c:173
+msgid "Send User Password"
+msgstr "Envia la contrasenya d'usuari/a"
+
+#: gnome-ppp/account-window.c:174
+msgid "Password taken from Authentication"
+msgstr "La contrasenya d'usuari/a s'agafa de l'autenticació"
+
+#: gnome-ppp/account-window.c:177
+msgid "Dialog Box Input"
+msgstr "Entrada del diàleg"
+
+#: gnome-ppp/account-window.c:178
+msgid "Enter text to be used as a dialog message when prompted for input"
+msgstr "Introduïu el text que mostrarà el diàleg en demanar l'entrada"
+
+#: gnome-ppp/account-window.c:276
+msgid "open_account_window(): account=NULL with clone flag"
+msgstr "open_account_window(): account=NULL amb marca de clonar"
+
+#: gnome-ppp/account-window.c:302
+msgid "open_account_window(): calling arguments invalid"
+msgstr "open_account_window(): els arguments de la crida no són vàlids"
+
+#. dial command entry widgets
+#: gnome-ppp/account-window.c:342 gnome-ppp/modem-window.c:288
+msgid "Dial"
+msgstr "Marcatge"
+
+#: gnome-ppp/account-window.c:348
+msgid "Authentication"
+msgstr "Autenticació"
+
+#. dns server entry
+#: gnome-ppp/account-window.c:354 gnome-ppp/account-window.c:1223
+msgid "IP Address"
+msgstr "Adreça IP"
+
+#: gnome-ppp/account-window.c:360
+msgid "DNS"
+msgstr "DNS"
+
+#: gnome-ppp/account-window.c:366
+msgid "Script"
+msgstr "Fitxer de seqüència d'ordres"
+
+#: gnome-ppp/account-window.c:372
+msgid "PPP"
+msgstr "PPP"
+
+#: gnome-ppp/account-window.c:378
+msgid "Modem"
+msgstr "Mòdem"
+
+#: gnome-ppp/account-window.c:805
+msgid "Account Name"
+msgstr "Nom del compte"
+
+#. redial spin button
+#: gnome-ppp/account-window.c:817
+msgid "Redial Maximum"
+msgstr "Nombre màxim de reintents de marcatge"
+
+#. dial timeout spin button
+#: gnome-ppp/account-window.c:838
+msgid "Dial Timeout (sec)"
+msgstr "Temps d'espera del marcatge (segons)"
+
+#. phone number frame
+#: gnome-ppp/account-window.c:859
+msgid "Phone Numbers"
+msgstr "Nombre de telèfon"
+
+#. Phone number
+#: gnome-ppp/account-window.c:871
+msgid "#"
+msgstr "#"
+
+#. add/remove buttons
+#: gnome-ppp/account-window.c:892 gnome-ppp/account-window.c:1242
+#: gnome-ppp/account-window.c:1326 gnome-ppp/account-window.c:1464
+msgid "Add"
+msgstr "Afegeix"
+
+#: gnome-ppp/account-window.c:906 gnome-ppp/account-window.c:1256
+#: gnome-ppp/account-window.c:1340 gnome-ppp/account-window.c:1490
+#: sync/main.c:60 sync/main.c:170
+msgid "Remove"
+msgstr "Suprimeix"
+
+#: gnome-ppp/account-window.c:958
+msgid "PAP/CHAP"
+msgstr "PAP/CHAP"
+
+#: gnome-ppp/account-window.c:970
+msgid "User Name"
+msgstr "Nom d'usuari"
+
+#: gnome-ppp/account-window.c:990
+msgid "Remote Name"
+msgstr "Nom remot"
+
+#. password
+#: gnome-ppp/account-window.c:1011
+msgid "Hidden Password"
+msgstr "Contrasenya amagada"
+
+#. local ip address
+#: gnome-ppp/account-window.c:1061
+msgid "Local IP Address"
+msgstr "Adreça IP local"
+
+#: gnome-ppp/account-window.c:1072 gnome-ppp/account-window.c:1117
+#: gnome-ppp/account-window.c:1162
+msgid "Dynamic"
+msgstr "Dinàmica"
+
+#: gnome-ppp/account-window.c:1086 gnome-ppp/account-window.c:1131
+#: gnome-ppp/account-window.c:1176
+msgid "Static"
+msgstr "Estàtica"
+
+#. remote ip address
+#: gnome-ppp/account-window.c:1151
+msgid "Remote IP Address"
+msgstr "Adreça IP remota"
+
+#. dns server list
+#: gnome-ppp/account-window.c:1210
+msgid "DNS Servers"
+msgstr "Servidors DNS"
+
+#. search domains list
+#: gnome-ppp/account-window.c:1295
+msgid "Search Domains"
+msgstr "Dominis de recerca"
+
+#: gnome-ppp/account-window.c:1306
+msgid "Domain Name"
+msgstr "Nom del domini"
+
+#: gnome-ppp/account-window.c:1388
+msgid "Action"
+msgstr "Acció"
+
+#: gnome-ppp/account-window.c:1389
+msgid "Text"
+msgstr "Text"
+
+#. script list
+#: gnome-ppp/account-window.c:1397
+msgid "Login Script"
+msgstr "Fitxer de seqüència d'ordres d'entrada"
+
+#: gnome-ppp/account-window.c:1477
+msgid "Insert"
+msgstr "Insereix"
+
+#: gnome-ppp/account-window.c:1551
+msgid "Add Default Route"
+msgstr "Afegeix una ruta per defecte"
+
+#: gnome-ppp/account-window.c:1567
+msgid "Lock Dialout Device"
+msgstr "Bloqueja el dispositiu de marcatge"
+
+#. mtu, mru spin buttons
+#: gnome-ppp/account-window.c:1582
+msgid "Maximum Transmission Unit"
+msgstr "Unitat màxima de transmissió"
+
+#: gnome-ppp/account-window.c:1604
+msgid "Maximum Receive Unit"
+msgstr "Unitat màxima de recepció"
+
+#: gnome-ppp/account-window.c:1625
+msgid "Run Program After Connect"
+msgstr "Executa un programa després de connectar"
+
+#: gnome-ppp/account-window.c:1637
+msgid "Run Program After Disconnect"
+msgstr "Executa un programa després de desconnectar"
+
+#. modem device
+#: gnome-ppp/account-window.c:1672
+msgid "Modem Device"
+msgstr "Dispositiu del mòdem"
+
+#. modem speed
+#: gnome-ppp/account-window.c:1698
+msgid "Connection Speed"
+msgstr "Velocitat de connexió"
+
+#. modem flow control
+#: gnome-ppp/account-window.c:1724
+msgid "Flow Control"
+msgstr "Control de flux"
+
+#. modem line termination
+#: gnome-ppp/account-window.c:1750
+msgid "Line Termination"
+msgstr "Terminació de línia"
+
+#. modem speaker volume
+#: gnome-ppp/account-window.c:1776
+msgid "Modem Speaker Volume"
+msgstr "Volum de l'altaveu del mòdem"
+
+#. modem edit commands
+#: gnome-ppp/account-window.c:1793
+msgid " Edit Modem Commands "
+msgstr " Editar les ordres del mòdem "
+
+#: gnome-ppp/account-window.c:2252
+msgid "**PASSWORD**"
+msgstr "**Contrasenya**"
+
+#: gnome-ppp/account-window.c:2256
+msgid "script_type_cb(): optionmenu data bad"
+msgstr "script_type_cb(): les dades del menú d'opció són incorrectes"
+
+#: gnome-ppp/dial-window.c:143
+msgid "_Debug Terminal"
+msgstr "Terminal _de depuració"
+
+#: gnome-ppp/dial-window.c:150
+msgid "_New..."
+msgstr "_Nou..."
+
+#: gnome-ppp/dial-window.c:151
+msgid "D_uplicate..."
+msgstr "_Duplica..."
+
+#: gnome-ppp/dial-window.c:152
+msgid "_Edit..."
+msgstr "_Edita..."
+
+#: gnome-ppp/dial-window.c:153
+msgid "_Delete..."
+msgstr "_Suprimeix..."
+
+#: gnome-ppp/dial-window.c:172
+msgid "_Account"
+msgstr "_Compte"
+
+#. set up the main application
+#: gnome-ppp/dial-window.c:210
+msgid "gnome-ppp"
+msgstr "gnome-ppp"
+
+#: gnome-ppp/dial-window.c:358
+msgid "Dialing"
+msgstr "S'està marcant"
+
+#: gnome-ppp/dial-window.c:362
+msgid "Connected"
+msgstr "S'ha connectat"
+
+#: gnome-ppp/dial-window.c:385
+msgid "refresh_dial_app(): gtk_clist_append failed."
+msgstr "refresh_dial_app(): ha fallat gtk_clist_append."
+
+#: gnome-ppp/dial-window.c:409 gnome-ppp/dial-window.c:417
+msgid "Connect"
+msgstr "Connecta"
+
+#: gnome-ppp/dial-window.c:427
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: gnome-ppp/dial-window.c:452
+msgid "You must disconnect before closing."
+msgstr "Heu de desconnectar abans de tancar."
+
+#: gnome-ppp/dial-window.c:742
+msgid "Are you sure you want to delete this account?\n"
+msgstr "Esteu segur que voleu suprimir aquest compte?\n"
+
+#: gnome-ppp/dial-window.c:752
+msgid "The account cannot be deleted."
+msgstr "No es pot suprimir el compte."
+
+#: gnome-ppp/dial-window.c:758
+msgid "The account is in use and cannot be deleted."
+msgstr "No es pot suprimir el compte perquè s'està usant."
+
+#: gnome-ppp/dial-window.c:781
+msgid "GNOME Internet Dialer"
+msgstr "Marcador d'internet del GNOME"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:181
+msgid "Raise PPP Link"
+msgstr "Activa l'enllaç PPP"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:213 sync/main.c:67
+msgid "About..."
+msgstr "Quant a..."
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:219
+msgid "Properties..."
+msgstr "Propietats..."
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:223
+msgid "Offline"
+msgstr "Desconnecta"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:432
+msgid "Connecting..."
+msgstr "S'esta connectant..."
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:437
+msgid "PPP Connected"
+msgstr "S'ha connectat amb el PPP"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:443
+msgid "PPP Error!"
+msgstr "S'ha produït un error en el PPP."
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:483
+msgid "That account is already in use.\n"
+msgstr "S'està fent servir aquest compte.\n"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:566
+msgid "GNOME PPP Dialer Applet"
+msgstr "Miniaplicació de marcatge del PPP del GNOME"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:569
+msgid ""
+"An unnecessarily nice looking applet for GNOME's panel for easy control of "
+"PPP network links."
+msgstr ""
+"Una miniaplicació per al quadre del GNOME per controlar de manera senzilla "
+"els enllaços de xarxa PPP."
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:691
+msgid "PPP Applet Properties"
+msgstr "Propietats de la miniaplicació del PPP"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:706
+msgid "Animation"
+msgstr "Animació"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:712
+msgid "Small"
+msgstr "Petit"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:716
+msgid "Large"
+msgstr "Gran"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:720
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:769
+msgid "None"
+msgstr "Cap"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:724
+msgid "Options"
+msgstr "Opcions"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:730
+msgid "Freeze Animation on Connect"
+msgstr "Atura l'animació en connectar-se"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:737
+msgid "Disconnect PPP on GNOME logout"
+msgstr "Desconnecta la connexió PPP quan es tanqui la sessió del GNOME"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:745
+msgid "Timer"
+msgstr "Temporitzador"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:751
+msgid "Label"
+msgstr "Etiqueta"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:760
+msgid "Tooltip"
+msgstr "Indicador de l'eina"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:778
+msgid "Animation Speed"
+msgstr "Velocitat de l'animació"
+
+#: gnome-ppp/gnome-ppp-applet/ppp-applet.c:791
+msgid "PPP Applet"
+msgstr "Miniaplicació de la connexió PPP"
+
+#: gnome-ppp/libgnome_ppp/connect.c:203
+msgid "---NEW CONNECTION---"
+msgstr "---Nova connexió---"
+
+#: gnome-ppp/libgnome_ppp/msg.c:26
+msgid "Account already connected."
+msgstr "El compte ja està connectat."
+
+#: gnome-ppp/libgnome_ppp/msg.c:27
+msgid "Starting PPP Connection."
+msgstr "S'està iniciant la connexió PPP."
+
+#: gnome-ppp/libgnome_ppp/msg.c:28
+msgid "You don't have permission to execute pppd."
+msgstr "No teniu permís per executar el pppd."
+
+#: gnome-ppp/libgnome_ppp/msg.c:29
+msgid "The modem is in use by another program."
+msgstr "Un altra programa està fent servir el mòdem."
+
+#: gnome-ppp/libgnome_ppp/msg.c:30
+msgid "Running pppd."
+msgstr "S'està executant el pppd."
+
+#: gnome-ppp/libgnome_ppp/msg.c:31
+msgid "Closing connection."
+msgstr "S'està tancant la connexió."
+
+#: gnome-ppp/libgnome_ppp/msg.c:32
+msgid "The pppd program failed to run gnome-ppp-chat."
+msgstr "El programa pppd no ha pogut executar el gnome-ppp-chat."
+
+#: gnome-ppp/libgnome_ppp/msg.c:33
+msgid "The modem could not be hung up."
+msgstr "No s'ha pogut penjar el mòdem."
+
+#: gnome-ppp/libgnome_ppp/msg.c:34
+msgid "Initalizing modem."
+msgstr "S'està inicialitzant el mòdem."
+
+#: gnome-ppp/libgnome_ppp/msg.c:35
+msgid "Your modem is not responding to initalization."
+msgstr "El vostre mòdem no respon a la inicialització."
+
+#: gnome-ppp/libgnome_ppp/msg.c:36
+msgid "The command to set the volume on your modem's speaker failed."
+msgstr "Ha fallat l'ordre per establir el volum del mòdem."
+
+#: gnome-ppp/libgnome_ppp/msg.c:37
+msgid "No answer after maximum number of re-dial attempts."
+msgstr "No hi ha hagut resposta després del màxim nombre de reintents."
+
+#: gnome-ppp/libgnome_ppp/msg.c:38
+msgid "No phone numbers specified for this account."
+msgstr "No s'ha especificat cap nombre de telèfon per a aquest compte."
+
+#: gnome-ppp/libgnome_ppp/msg.c:39
+msgid "Dialing."
+msgstr "S'està marcant."
+
+#: gnome-ppp/libgnome_ppp/msg.c:40
+msgid "Dialing timeout."
+msgstr "S'ha acabat el temps d'espera del marcatge."
+
+#: gnome-ppp/libgnome_ppp/msg.c:41
+msgid "No dialtone."
+msgstr "No hi ha tons de marcatge."
+
+#: gnome-ppp/libgnome_ppp/msg.c:42
+msgid "Number busy."
+msgstr "El nombre està ocupat."
+
+#: gnome-ppp/libgnome_ppp/msg.c:43
+msgid "Ring, but no answer."
+msgstr "S'ha marcat, però no hi ha resposta."
+
+#: gnome-ppp/libgnome_ppp/msg.c:44
+msgid "Connection failure, reason unknown."
+msgstr "Ha fallat la connexió per motius desconeguts."
+
+#: gnome-ppp/libgnome_ppp/msg.c:45
+msgid "Connected."
+msgstr "S'ha connectat."
+
+#: gnome-ppp/libgnome_ppp/msg.c:46
+msgid "The modem lost connection with remote host."
+msgstr "El mòdem ha perdut la connexió amb l'amfitrió remot."
+
+#: gnome-ppp/libgnome_ppp/msg.c:47
+msgid "Running Script."
+msgstr "S'està executant el fitxer de seqüència d'ordres."
+
+#: gnome-ppp/libgnome_ppp/msg.c:48
+msgid "Script Complete."
+msgstr "Ha acabat el fitxer de seqüència d'ordres."
+
+#: gnome-ppp/libgnome_ppp/msg.c:49
+msgid "PPP connection established."
+msgstr "S'ha establert la connexió PPP."
+
+#: gnome-ppp/libgnome_ppp/msg.c:50
+msgid "Failed to establish a PPP connection."
+msgstr "No s'ha pogut establir la connexió PPP."
+
+#: gnome-ppp/libgnome_ppp/msg.c:51
+msgid "The pppd daemon died unexpectedly."
+msgstr "El dimoni pppd ha acabat inesperadament."
+
+#: gnome-ppp/modem-window.c:83
+msgid "open_modem_window(): account=NULL"
+msgstr "open_modem_window(): account=NULL"
+
+#: gnome-ppp/modem-window.c:120
+msgid "Commands"
+msgstr "Ordres"
+
+#: gnome-ppp/modem-window.c:126
+msgid "Responses"
+msgstr "Respostes"
+
+#. initialization command entry widgets
+#. initialization response entry widgets
+#: gnome-ppp/modem-window.c:268 gnome-ppp/modem-window.c:408
+msgid "Initialization"
+msgstr "Inicialització"
+
+#. hangup command entry widgets
+#. hangup response entry widgets
+#: gnome-ppp/modem-window.c:307 gnome-ppp/modem-window.c:428
+msgid "Hangup"
+msgstr "Penja"
+
+#. volume mute command entry widgets
+#: gnome-ppp/modem-window.c:327
+msgid "Volume Mute"
+msgstr "Silencia el volum"
+
+#. volume low command entry widgets
+#: gnome-ppp/modem-window.c:347
+msgid "Volume Low"
+msgstr "Volum baix"
+
+#. volume high command entry widgets
+#: gnome-ppp/modem-window.c:367
+msgid "Volume High"
+msgstr "Volum alt"
+
+#. connection response entry widgets
+#: gnome-ppp/modem-window.c:448
+msgid "Connection"
+msgstr "Connexió"
+
+#. busy response entry widgets
+#: gnome-ppp/modem-window.c:468
+msgid "Busy"
+msgstr "Ocupat"
+
+#. no answer response entry widgets
+#: gnome-ppp/modem-window.c:488
+msgid "No Answer"
+msgstr "Cap resposta"
+
+#. no carrier response entry widgets
+#: gnome-ppp/modem-window.c:508
+msgid "No Carrier"
+msgstr "No hi ha portadora"
+
+#. no dialtone response entry widgets
+#: gnome-ppp/modem-window.c:528
+msgid "No Dialtone"
+msgstr "No hi ha to de marcatge"
+
+#: gnome-transfer-manager/src/GNOME_Transfer_Manager.server.in.in.h:1
+msgid "GNOME Transfer Manager"
+msgstr "Gestor de transferències del GNOME"
+
+#: network-utilities/gnome-remote-shell.c:189
+#: network-utilities/gnome-remote-shell.c:216
+msgid "There is a connection error"
+msgstr "S'ha produït un error en la connexió"
+
+#: network-utilities/gnome-remote-shell.c:284
+msgid "There is an error with displaying help"
+msgstr "S'ha produït un error en visualitzar l'ajuda"
+
+#: network-utilities/gnome-remote-shell.c:324
+msgid "Graphical user interface for GNOME Remote Shell"
+msgstr "Interfície gràfica d'usuari per a l'intèrpret d'ordres remot del GN0ME"
+
+#: network-utilities/gnome-remote-shell.c:327
+msgid "This is an untranslated version of GNOME Remote Shell"
+msgstr ""
+"Ivan Vilata i Balaguer <al011097@alumail.uji.es>, 2000\n"
+"Xavier Conde Rueda <xaviconde@eremas.com>, 2004"
+
+#: network-utilities/gnome-remote-shell.c:373
+#: network-utilities/gnome-remote-shell.c:423
+#: network-utilities/gnome-remote-shell.c:550
+msgid "Failed to create a connection"
+msgstr "No s'ha pogut crear una connexió"
+
+#: network-utilities/gnome-remote-shell.c:373
+msgid "A hostname is required"
+msgstr "Es necessita un nom de màquina"
+
+#: network-utilities/gnome-remote-shell.c:423
+msgid "A user name is required for SSH"
+msgstr "Cal un nom d'usuari per a l'SSH"
+
+#: network-utilities/gnome-remote-shell.c:501
+msgid "There is a command line error"
+msgstr "S'ha produït un error en la línia d'ordres"
+
+#: network-utilities/gnome-remote-shell.c:550
+msgid "The host cannot be found"
+msgstr "No s'ha trobat la màquina"
+
+#: network-utilities/gnome-remote-shell.glade.h:3
+msgid "<span weight=\"bold\">Connect to remote host</span>"
+msgstr "<span weight=\"bold\">Connecta amb una màquina remota</span>"
+
+#: network-utilities/gnome-remote-shell.glade.h:4
+msgid "<span weight=\"bold\">Method</span>"
+msgstr "<span weight=\"bold\">Mètode</span>"
+
+#: network-utilities/gnome-remote-shell.glade.h:5
+msgid "<span weight=\"bold\">Window size</span>"
+msgstr "<span weight=\"bold\">Mida de la finestra</span>"
+
+#: network-utilities/gnome-remote-shell.glade.h:7
+msgid "Connect to remote host"
+msgstr "Connecta amb una màquina remota"
+
+#: network-utilities/gnome-remote-shell.glade.h:8
+msgid "H_eight:"
+msgstr "A_lçada:"
+
+#: network-utilities/gnome-remote-shell.glade.h:9
+msgid "H_ost:"
+msgstr "_Màquina:"
+
+#: network-utilities/gnome-remote-shell.glade.h:10
+msgid "Regular shell (_Telnet)"
+msgstr "Intèrpret d'ordres normal (_telnet)"
+
+#: network-utilities/gnome-remote-shell.glade.h:11
+msgid "Use _default"
+msgstr "Fes servir el pre_determinat"
+
+#: network-utilities/gnome-remote-shell.glade.h:12
+msgid "_Contents"
+msgstr "_Contingut"
+
+#: network-utilities/gnome-remote-shell.glade.h:13
+msgid "_Port:"
+msgstr "_Port:"
+
+#: network-utilities/gnome-remote-shell.glade.h:14
+msgid "_Secure shell (SSH)"
+msgstr "Intèrpret d'ordres _segur (SSH)"
+
+#: network-utilities/gnome-remote-shell.glade.h:15
+msgid "_Shell"
+msgstr "_Intèrpret d'ordres"
+
+#: network-utilities/gnome-remote-shell.glade.h:16
+msgid "_User:"
+msgstr "_Usuari:"
+
+#: network-utilities/gnome-remote-shell.glade.h:17
+msgid "_Width:"
+msgstr "Am_plada:"
+
+#: network-utilities/gnome-remote-shell.glade.h:18
+msgid "characters"
+msgstr "caràcters"
+
+#: pws/pws-preferences-support.c:273
+msgid "Expander Size"
+msgstr "Mida de l'expansor"
+
+#: pws/pws-preferences-support.c:274
+msgid "Size of the expander arrow"
+msgstr "Mida de la fletxa de l'expansor"
+
+#: pws/pws-preferences-widget.c:112
+msgid "Web folder:"
+msgstr "Carpeta web:"
+
+#: pws/pws-preferences-widget.c:116
+msgid "Select the folder to be published"
+msgstr "Seleccioneu la carpeta web que es publicarà"
+
+#. Server status
+#: pws/pws-preferences-widget.c:125
+msgid "Enable web server"
+msgstr "Habilita el servidor de web"
+
+#. Additional options
+#: pws/pws-preferences-widget.c:133 pws/pws-preferences-widget.c:134
+msgid "Additional options"
+msgstr "Opcions addicionals"
+
+#: pws/pws-preferences-widget.c:156
+msgid "Port number:"
+msgstr "Nombre de port:"
+
+#: pws/pws-preferences-widget.c:175
+msgid "Time out:"
+msgstr "Temps d'espera:"
+
+#: pws/pws-preferences-widget.c:194
+msgid "Keep alive"
+msgstr "Segueix connectat"
+
+#: pws/pws.c:86
+msgid "/_Open Web Folder"
+msgstr "/_Obre la carpeta web"
+
+#: pws/pws.c:179
+msgid "Personal web server preferences"
+msgstr "Preferències del servidor web personal"
+
+#: pws/pws.c:194
+msgid "Personal Web Server Preferences"
+msgstr "Preferències del servidor web personal"
+
+#: pws/pws.c:195
+msgid "Setup the options for your personal web server."
+msgstr "Configura les opcions per al vostre servidor web personal."
+
+#: sync/entryconfigdialog.c:70
+msgid "Could not load UI for entry configuration dialog"
+msgstr ""
+"No s'ha pogut carregar la interfície d'usuari del diàleg de configuració de "
+"l'entrada"
+
+#: sync/entryconfigdialog.glade.h:2
+msgid "Entry name"
+msgstr "Nom de l'entrada"
+
+#: sync/entryconfigdialog.glade.h:3
+msgid "Local path"
+msgstr "Camí local"
+
+#: sync/entryconfigdialog.glade.h:4
+msgid "Preserve group"
+msgstr "Conserva el grup"
+
+#: sync/entryconfigdialog.glade.h:5
+msgid "Preserve permissions"
+msgstr "Conserva els permisos"
+
+#: sync/entryconfigdialog.glade.h:6
+msgid "Preserve times"
+msgstr "Conserva els temps"
+
+#: sync/entryconfigdialog.glade.h:7
+msgid "Recurse into directories"
+msgstr "Accedeix recursivament als directoris"
+
+#: sync/entryconfigdialog.glade.h:8
+msgid "Remote host"
+msgstr "Màquina remota"
+
+#: sync/entryconfigdialog.glade.h:9
+msgid "Remote path"
+msgstr "Camí remot"
+
+#: sync/entryconfigdialog.glade.h:10
+msgid "Synchronization options"
+msgstr "Opcions de sincronització"
+
+#: sync/entryconfigdialog.glade.h:11
+msgid "Update only (don't overwrite newer files)"
+msgstr "Només actualitza (no sobreescriguis els fitxers més recents)"
+
+#: sync/entryconfigdialog.glade.h:12
+msgid "Use relative path names"
+msgstr "Usa noms de fitxer relatius"
+
+#: sync/entryconfigdialog.glade.h:13
+msgid "Use rsync"
+msgstr "Usa l'rsync"
+
+#: sync/entryconfigdialog.glade.h:14
+msgid "Use unison"
+msgstr "Usa l'unison"
+
+#: sync/entryconfigdialog.glade.h:15
+msgid "dialog1"
+msgstr "diàleg1"
+
+#: sync/entryconfigdialog.glade.h:16
+msgid "rsync"
+msgstr "rsync"
+
+#: sync/entryconfigdialog.glade.h:17
+msgid "unison"
+msgstr "unison"
+
+#: sync/entrylist.c:70
+msgid "Local"
+msgstr "Local"
+
+#: sync/entrylist.c:73
+msgid "Remote"
+msgstr "Remot"
+
+#: sync/entrylist.c:76
+msgid "Last sync"
+msgstr "Última sincronització"
+
+#: sync/main.c:44
+msgid "_Synchronize"
+msgstr "_Sincronitza"
+
+#: sync/main.c:55
+msgid "New entry..."
+msgstr "Nova entrada..."
+
+#: sync/main.c:57 sync/main.c:171
+msgid "Edit..."
+msgstr "Edita..."
+
+#: sync/main.c:75 sync/main.c:181
+msgid "Synchronize"
+msgstr "Sincronitza"
+
+#: sync/main.c:103
+msgid "Gnome Synchronize"
+msgstr "Sincronització del GNOME"
+
+#: sync/main.c:105
+msgid "The GNOME file synchronization program."
+msgstr "El programa de sincronització de fitxers del GNOME."
+
+#: sync/main.c:176
+msgid "New"
+msgstr "Nou"
+
+#: sync/main.c:177
+msgid "Create new synchronization entry"
+msgstr "Crea una nova entrada de sincronització"
+
+#: sync/main.c:182
+msgid "Start synchronization for selected entries"
+msgstr "Inicia la sincronització per a les entrades seleccionades"
+
+#: sync/main.c:185
+msgid "Edit"
+msgstr "Edita"
+
+#: sync/main.c:186
+msgid "Edit selected entry"
+msgstr "Edita l'entrada seleccionada"
+
+#: sync/main.c:189
+msgid "Delete"
+msgstr "Esborra"
+
+#: sync/main.c:190
+msgid "Delete selected entries"
+msgstr "Esborra les entrades seleccionades"
+
+#: desktop/server/x11vnc.c:346
+#, c-format
+msgid "Host %s is no longer viewing your desktop"
+msgstr "L'ordinador %s ja no està visualitzant el vostre escriptori"
+
+#: desktop/server/x11vnc.c:419
+#, c-format
+msgid "Host %s is trying to view your desktop, allow them?"
+msgstr "L'ordinador %s està tractant de visualitzar el vostre escriptori, voleu permetre-ho?"
+
+#: desktop/server/x11vnc.c:445
+#, c-format
+msgid "Host %s is now viewing your desktop"
+msgstr "L'ordinador %s ara està visualitzant el vostre escriptori"
