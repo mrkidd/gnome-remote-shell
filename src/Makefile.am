@@ -2,7 +2,7 @@ SUBDIRS = help
 
 bin_PROGRAMS = gnome-remote-shell
 
-dialogdir = $(datadir)/$(PACKAGE)/dialogs
+dialogdir = $(datadir)/$(PACKAGE)
 dialog_DATA = gnome-remote-shell.glade
 
 INCLUDES = \
