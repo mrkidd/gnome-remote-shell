@@ -263,6 +263,13 @@ create_error (gchar *title, gchar *reason)
 	return;
 }
 
+void
+on_profile_output_row_activated (GtkTreeView *treeview, GtkTreePath *arg1, GtkTreeViewColumn *arg2, gpointer user_data)
+{
+	profile_use_clicked (GTK_WIDGET (treeview), user_data);
+	entry_activate_cb (GTK_WIDGET (treeview), user_data);
+}
+
 /*
  * Use selected profile
  */

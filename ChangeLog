@@ -1,3 +1,8 @@
+2004-09-02  Mason Kidd  <mrkidd@mrkidd.com>
+
+	* src/gnome-remote-shell.c, src/gnome-remote-shell.glade: Add double-clicking of
+	entries in list to connect to that entry.
+	
 2004-08-24  Mason Kidd  <mrkidd@mrkidd.com>
 
 	* configure.in, Makefile.am: Update references to the .spec file
