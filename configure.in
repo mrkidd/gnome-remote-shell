@@ -25,57 +25,6 @@ PKG_CHECK_MODULES(GNETWORK, libgnomeui-2.0 libgnome-2.0 gtk+-2.0 glib-2.0 libgla
 AC_SUBST(GNETWORK_CFLAGS)
 AC_SUBST(GNETWORK_LIBS)
 
-dnl
-dnl Checks libraries
-dnl
-
-dnl Find vncviewer.
-dnl
-AC_ARG_WITH(vncviewer, [  --with-vncviewer=PATH   Which VNC viewer program to use.])
-if test "x$with_vncviewer" = "x" ; then
-	AC_PATH_PROG(VNCVIEWER_PROGRAM,
-		xvncviewer,,
-		$PATH:/usr/bin:/usr/local/bin)
-	if test "x$VNCVIEWER_PROGRAM" != "x" ; then
-		AC_DEFINE_UNQUOTED(VNCVIEWER_PROGRAM, "$VNCVIEWER_PROGRAM", [The vncviewer program])
-	else
-		AC_PATH_PROG(VNCVIEWER_PROGRAM,
-			vncviewer,,
-			$PATH:/usr/bin:/usr/local/bin)
-		if test "x$VNCVIEWER_PROGRAM" != "x" ; then
-			AC_DEFINE_UNQUOTED(VNCVIEWER_PROGRAM, "$VNCVIEWER_PROGRAM", [The vncviewer program])
-		fi
-	fi
-else
-	AC_DEFINE_UNQUOTED(VNCVIEWER_PROGRAM, "$with_vncviewer", [The vncviewer program])
-fi
-AM_CONDITIONAL(HAVE_VNCVIEWER, test "x$VNCVIEWER_PROGRAM" != "x")
-
-dnl Find Xnest
-dnl
-AC_ARG_WITH(xnest, [  --with-xnest=PATH       Where Xnest is.])
-if test "x$with_xnest" = "x" ; then
-	AC_PATH_PROG(XNEST_PROGRAM,
-		Xnest,,
-		$PATH:/usr/bin:/usr/local/bin)
-	if test "x$XNEST_PROGRAM" != "x" ; then
-		AC_DEFINE_UNQUOTED(XNEST_PROGRAM, "$XNEST_PROGRAM", [The Xnest program])
-	fi
-else
-	AC_DEFINE_UNQUOTED(XNEST_PROGRAM, "$with_xnest", [The Xnest program])
-fi
-AM_CONDITIONAL(HAVE_XNEST, test "x$XNEST_PROGRAM" != "x")
-
-AC_ARG_ENABLE(rdclient, AC_HELP_STRING([--disable-rdclient],
-		[Build the Remote Desktop Client module (default: enabled)]))
-if test "x$enable_rdclient" = "xno"; then
-	echo "Not building the Remote Desktop Client module"
-else
-	enable_rdclient=yes
-	echo "Building the Remote Desktop Client module"
-fi
-AM_CONDITIONAL(WITH_RDCLIENT, test "x$enable_rdclient" = "xyes")
-
 dnl Check gconftool
 dnl
 AC_PATH_PROG(GCONFTOOL, gconftool-2, no)
@@ -121,7 +70,7 @@ fi
 
 AC_OUTPUT([
 Makefile
-gnome-network.spec
+gnome-remote-shell.spec
 po/Makefile.in
 src/Makefile
 src/help/Makefile

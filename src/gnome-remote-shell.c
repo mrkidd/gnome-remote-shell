@@ -45,14 +45,11 @@
 #include <libgnomeui/gnome-window-icon.h>
 #include <libgnomeui/libgnomeui.h>
 
-#define SSH_PORT 22
-#define TELNET_PORT 23
+#include "gnome-remote-shell.h"
 
-enum {
-	IPV4,
-	IPV6
-};
-
+static GtkListStore *list_store;
+static GtkTreeModel *model;
+static GtkTreeView *list_widget;
 static GConfClient *conf_client;
 static GtkWidget *main_window;
 static GtkWidget *ssh_method;
@@ -63,13 +60,7 @@ static GtkWidget *port_default;
 static GtkWidget *port_entry;
 static GtkWidget *window_width;
 static GtkWidget *window_height;
-
-void	window_destroyed_cb (GtkWidget *widget, gpointer user_data);
-void	radio_button_toggled_cb (GtkToggleButton *button, gpointer user_data);
-void	entry_activate_cb (GtkWidget *widget, gpointer user_data);
-void	port_default_toggled_cb (GtkToggleButton *button, gpointer user_data);
-void	launch_help (GtkWidget *widget, gpointer user_data);
-void	on_about_activate (GtkWidget *widget, gpointer user_data);
+static GtkWidget *profile_listbox;
 
 static gint     get_ip_version (const gchar *ip_address);
 static gboolean check_network_status (const gchar *host, gint port);
@@ -268,6 +259,325 @@ create_error (gchar *title, gchar *reason)
 	gtk_window_set_modal (GTK_WINDOW (error_dialog), TRUE);
 
 	gtk_widget_show (error_dialog);
+
+	return;
+}
+
+/*
+ * Use selected profile
+ */
+void
+profile_use_clicked (GtkWidget *widget, gpointer user_data)
+{
+	GtkTreeIter iter;
+	GtkTreeSelection *selection;
+
+	selection = gtk_tree_view_get_selection(list_widget);
+
+	gtk_tree_selection_set_mode(selection, GTK_SELECTION_SINGLE);
+	if (gtk_tree_selection_get_selected(selection, &model, &iter)) {
+
+		GValue val0, val1, val2;
+		const char *host = NULL, *username = NULL;
+		gint portvalue = 0;
+
+		memset(&val0, 0, sizeof(val0));
+		memset(&val1, 0, sizeof(val1));
+		memset(&val2, 0, sizeof(val2));
+		gtk_tree_model_get_value(GTK_TREE_MODEL(model), &iter, 0, &val0);
+		gtk_tree_model_get_value(GTK_TREE_MODEL(model), &iter, 1, &val1);
+		gtk_tree_model_get_value(GTK_TREE_MODEL(model), &iter, 2, &val2);
+
+		host = g_value_get_string(&val0);
+		username = g_value_get_string(&val1);
+		portvalue = g_value_get_int(&val2);
+
+		gtk_entry_set_text (GTK_ENTRY (gnome_entry_gtk_entry (GNOME_ENTRY (host_entry))), host);
+		if (username) {
+			gtk_entry_set_text (GTK_ENTRY (gnome_entry_gtk_entry (GNOME_ENTRY (user_entry))), username);
+		}
+
+		if (portvalue > 0) {
+			gtk_spin_button_set_value (GTK_SPIN_BUTTON (port_entry), portvalue);
+		}
+
+		if (portvalue == TELNET_PORT) {
+			gtk_widget_set_sensitive (user_entry, FALSE);
+			gtk_widget_set_sensitive (port_entry, FALSE);
+			gtk_toggle_button_set_state (GTK_TOGGLE_BUTTON (telnet_method), TRUE);
+			gtk_toggle_button_set_state (GTK_TOGGLE_BUTTON (port_default), TRUE);
+		}
+		else if (portvalue == SSH_PORT){
+			gtk_widget_set_sensitive (user_entry, TRUE);
+			gtk_widget_set_sensitive (port_entry, FALSE);
+			gtk_toggle_button_set_state (GTK_TOGGLE_BUTTON (ssh_method), TRUE);
+			gtk_toggle_button_set_state (GTK_TOGGLE_BUTTON (port_default), TRUE);
+		}
+		else {
+			gtk_widget_set_sensitive (user_entry, TRUE);
+			gtk_widget_set_sensitive (port_entry, TRUE);
+			gtk_toggle_button_set_state (GTK_TOGGLE_BUTTON (ssh_method), TRUE);
+			gtk_toggle_button_set_state (GTK_TOGGLE_BUTTON (port_default), FALSE);
+		}
+
+		g_value_unset(&val0);
+		g_value_unset(&val1);
+		g_value_unset(&val2);
+	}
+	else {
+		create_error (_("Could not use profile"), _("No profile is selected"));
+		return;
+	};
+
+	return;
+}
+
+/*
+ * Add profiles entry
+ */
+void
+profile_add_clicked (GtkWidget *widget, gpointer user_data)
+{
+	GtkTreeIter iter;
+	gint addport;
+	const gchar *addhost = NULL, *adduser = NULL;
+
+	/*
+	 * Get the port.
+	 * Use the default port if the checkbutton is active
+	 * (22 for secure shell, 23 for telnet)
+	 */
+	addport = gtk_spin_button_get_value_as_int (GTK_SPIN_BUTTON (port_entry));
+
+	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (port_default))) {
+		if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (ssh_method))) {
+			adduser = gtk_entry_get_text (GTK_ENTRY (gnome_entry_gtk_entry (GNOME_ENTRY (user_entry))));
+			addport = SSH_PORT;
+		}
+		if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (telnet_method))) {
+			adduser = (char *) "\0";
+			addport = TELNET_PORT;
+		}
+	}
+
+	/* Get the host */
+	addhost = gtk_entry_get_text (GTK_ENTRY (gnome_entry_gtk_entry (GNOME_ENTRY (host_entry))));
+	if (!addhost || !strlen (addhost)) {
+		create_error (_("Could not add profile"), _("A hostname is required"));
+		return;
+	}
+
+	gtk_list_store_append (list_store, &iter);
+	gtk_list_store_set (list_store, &iter,
+				0, addhost,
+				1, adduser,
+				2, addport,
+				-1);
+
+	/* save new profile list in GConf */
+	profile_save ();
+
+	return;
+}
+
+/*
+ * Remove entry from .gnome-remote-shell.profiles
+ */
+void
+profile_remove_clicked (GtkWidget *widget, gpointer user_data)
+{
+	GtkTreeIter iter;
+	GtkTreeSelection *selection;
+
+	selection = gtk_tree_view_get_selection(list_widget);
+
+	gtk_tree_selection_set_mode(selection, GTK_SELECTION_SINGLE);
+	if (gtk_tree_selection_get_selected(selection, &model, &iter)) {
+		gtk_list_store_remove(list_store, &iter);
+	}
+	else {
+		create_error (_("Could not remove profile"), _("No profile is selected"));
+		return;
+	};
+
+	/* save new profile list in GConf */
+	profile_save ();
+
+	return;
+}
+
+/*
+ * Save profiles to GConf
+ */
+void
+profile_save (void)
+{
+	GtkTreeIter iter;
+	gboolean valid;
+	GSList *profile_list;
+	char *buffer;
+
+	profile_list = NULL;
+
+	/* Get the first iter in the list */
+	valid = gtk_tree_model_get_iter_first (model, &iter);
+
+	while (valid) {
+
+		/* Walk through the list, reading each row */
+		GValue val0, val1, val2;
+		const char *host = NULL, *username = NULL;
+		gint portvalue = 0;
+
+		memset(&val0, 0, sizeof(val0));
+		memset(&val1, 0, sizeof(val1));
+		memset(&val2, 0, sizeof(val2));
+		gtk_tree_model_get_value(GTK_TREE_MODEL(model), &iter, 0, &val0);
+		gtk_tree_model_get_value(GTK_TREE_MODEL(model), &iter, 1, &val1);
+		gtk_tree_model_get_value(GTK_TREE_MODEL(model), &iter, 2, &val2);
+
+		host = g_value_get_string(&val0);
+		username = g_value_get_string(&val1);
+		if (!username) {
+			username = (char *) "\0";
+		}
+
+		portvalue = g_value_get_int(&val2);
+		buffer = NULL;
+		buffer = (char *) malloc (strlen(host) + strlen(username) + 8);
+
+		sprintf (buffer, "%s;%s;%d", host, username, portvalue);
+
+		if (buffer)
+			profile_list = g_slist_append (profile_list, buffer);
+
+		g_value_unset(&val0);
+		g_value_unset(&val1);
+		g_value_unset(&val2);
+
+		valid = gtk_tree_model_iter_next (model, &iter);
+	}
+
+	/* store list in GConf database */
+	gconf_client_set_list (conf_client, "/apps/gnome-remote-shell/Profiles",
+				GCONF_VALUE_STRING, profile_list, NULL);
+
+	/* free data */
+	g_slist_foreach (profile_list, (GFunc) g_free, NULL);
+	g_slist_free (profile_list);
+
+	return;
+}
+
+/*
+ * Read profiles from GConf at startup
+ */
+void
+profile_read (void)
+{
+	GtkTreeIter iter1;
+	GtkCellRenderer *renderer = NULL;
+	GtkTreeViewColumn *column;
+
+	GSList *iter;
+	GSList *profile_list;
+	char *element;
+
+	char *hostname;
+	char *username;
+	char *port;
+
+	/* create a new list store */
+	list_store = gtk_list_store_new (3, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_INT);
+
+	/* get widget defined in glade XML file */
+	list_widget = (GTK_TREE_VIEW (profile_listbox));
+
+	/* generate column titles */
+	renderer = gtk_cell_renderer_text_new ();
+	column = gtk_tree_view_column_new_with_attributes
+		(_("Host"), renderer, "text", 0, NULL);
+	gtk_tree_view_append_column (list_widget, column);
+
+	renderer = gtk_cell_renderer_text_new ();
+	column = gtk_tree_view_column_new_with_attributes
+		(_("User"), renderer, "text", 1, NULL);
+	gtk_tree_view_append_column (list_widget, column);
+
+	renderer = gtk_cell_renderer_text_new ();
+	column = gtk_tree_view_column_new_with_attributes
+		(_("Port"), renderer, "text", 2, NULL);
+	gtk_tree_view_append_column (list_widget, column);
+
+	/* get list of profile entries via GConf database */
+	profile_list = gconf_client_get_list (conf_client, "/apps/gnome-remote-shell/Profiles",
+				GCONF_VALUE_STRING, NULL);
+
+	iter = profile_list;
+
+	/* iterate through list and display values to user */
+	while (iter != NULL) {
+		element = (char *) iter->data;
+            
+		/* does this line has valid content */
+		if (strlen(element) > 4) {
+
+			hostname = strtok(element, ";");
+			username = strtok(NULL, ";");
+
+			port = strtok(NULL, ";");
+			if (!port) {
+				port = username;
+				username = (char *) "\0";
+			}
+
+			/* add line with profile data to list */
+			gtk_list_store_append (list_store, &iter1);
+
+			gtk_list_store_set (list_store, &iter1,
+					0, hostname,
+					1, username,
+					2, atoi(port),
+					-1);
+		}
+
+
+		iter = g_slist_next(iter);
+	}
+
+	/* free list retrieved from GConf */
+	g_slist_foreach(profile_list, (GFunc) g_free, NULL);
+	g_slist_free(profile_list);
+
+	/* get model from list store with profile entries */
+	model = GTK_TREE_MODEL (list_store);
+
+	gtk_tree_view_set_model (GTK_TREE_VIEW (list_widget), model);
+
+	/* complete successfully */
+	return;
+}
+
+/*
+ * Clear Hostname history
+ */
+void
+on_clear_host_history1_activate (GtkWidget *widget, gpointer user_data)
+{
+	gnome_entry_clear_history (GNOME_ENTRY (host_entry));
+
+	return;
+}
+
+/*
+ * Clear User history
+ */
+void
+on_clear_user_history1_activate (GtkWidget *widget, gpointer user_data)
+{
+	gnome_entry_clear_history (GNOME_ENTRY (user_entry));
+
+	return;
 }
 
 /*
@@ -562,6 +872,9 @@ main (int argc, char **argv)
 	const gchar *xml_file = DIALOGDIR "gnome-remote-shell.glade";
 	GladeXML *xml;
 	gchar *icon_path;
+	int flag;
+	char *host = NULL;
+	char *user = NULL;
 
 #ifdef ENABLE_NLS
 	bindtextdomain (GETTEXT_PACKAGE, GNOMELOCALEDIR);
@@ -591,12 +904,39 @@ main (int argc, char **argv)
 	port_default = glade_xml_get_widget (xml, "port_default");
 	window_width = glade_xml_get_widget (xml, "window_width");
 	window_height = glade_xml_get_widget (xml, "window_height");
+	profile_listbox = glade_xml_get_widget (xml, "profile_output");
 
 	/* set settings from gconf */
 	set_spin_from_config (window_width, "/apps/gnome-remote-shell/TerminalWidth", 80);
 	set_spin_from_config (window_height, "/apps/gnome-remote-shell/TerminalHeight", 25);	
 
 	glade_xml_signal_autoconnect (xml);
+
+	/* check for any command line parameters */
+	optind = 1;
+	while ((flag = getopt(argc, argv, "h:l:")) != -1) {
+		switch (flag) {
+			case 'h':
+				host = optarg;
+				gtk_entry_set_text (GTK_ENTRY (gnome_entry_gtk_entry (GNOME_ENTRY (host_entry))), host);
+				break;
+			case 'l':
+				user = optarg;
+				gtk_entry_set_text (GTK_ENTRY (gnome_entry_gtk_entry (GNOME_ENTRY (user_entry))), user);
+				break;
+			default:
+				break;
+		}
+	}
+
+	// bypass the window if there is a hostname and a username at least
+	if (user && host) {
+		activate_shell ();
+		g_object_unref (G_OBJECT (conf_client));
+		return 0;
+	}
+
+	profile_read ();
 
 	gtk_main ();
 

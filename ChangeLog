@@ -1,5 +1,11 @@
 2004-08-24  Mason Kidd  <mrkidd@mrkidd.com>
 
+	* configure.in, Makefile.am: Update references to the .spec file
+	* src/gnome-remote-shell.c, src/gnome-remote-shell.glade: UI updates
+	* Add src/gnome-remote-shell.h
+	
+2004-08-24  Mason Kidd  <mrkidd@mrkidd.com>
+
 	* Moved gnome-remote-shell into it's own module.
 	
 2004-01-05  Ulrich Neumann <U_Neumann@gne.de>
