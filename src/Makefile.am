@@ -14,7 +14,7 @@ INCLUDES = \
 	-DDATADIR=\""$(datadir)/"\" \
 	-DDIALOGDIR=\""$(dialogdir)/"\"
 
-gnome_remote_shell_SOURCES = gnome-remote-shell.c
+gnome_remote_shell_SOURCES = gnome-remote-shell.c gnome-remote-shell.h
 gnome_remote_shell_LDADD = $(GNETWORK_LIBS)
 
 pixmapsdir = $(datadir)/pixmaps
